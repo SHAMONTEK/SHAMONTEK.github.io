@@ -5,7 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Tae Knight – UI/UX Developer &amp; Product Architect</title>
 <meta name="description" content="Portfolio of Shamonte “Tae” Knight: full-stack engineer building AI, security and fintech products.">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#f4f2ee" id="tc">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2309090b'/%3E%3Ctext x='15' y='23' font-family='Georgia,serif' font-size='20' fill='%23e5e4e2' text-anchor='middle'%3ET%3C/text%3E%3Ccircle cx='25' cy='23' r='2.4' fill='%23c9a45c'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Shamonte “Tae” Knight — UI/UX Developer &amp; Product Architect">
+<meta property="og:description" content="Atlanta. Sketch it by hand, direct AI, ship it. Fintech, security and AI products.">
+<meta property="og:image" content="tae.jpg">
+<meta property="og:site_name" content="Tae Knight">
+<meta name="twitter:card" content="summary_large_image">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#09090b;--sf:#111114;--sf2:#1a1a1f;--bd:rgba(229,228,226,.1);--tx:#e5e4e2;--dim:#8d9097;--ac:#cfd2d7;--ac2:#9b9ea6;--gl:rgba(207,210,215,.07);--gold:#c9a45c;--red:#c4372a;--b1:#f4f4f5;--b2:#b4b7bd;--bt:#0a0a0b;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 :root[data-theme='light']{--bg:#f4f2ee;--sf:#fff;--sf2:#ebe8e2;--bd:rgba(0,0,0,.12);--tx:#141416;--dim:#5d5f66;--ac:#3a3d44;--ac2:#6b6e76;--gl:rgba(0,0,0,.05);--gold:#8f6b1f;--red:#a3271b;--b1:#2a2a2e;--b2:#141416;--bt:#f4f2ee;color-scheme:light}
@@ -80,14 +91,154 @@ textarea:focus,input:focus{border-color:var(--ac)}
 #toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,30px);background:var(--ac);color:var(--bg);padding:10px 18px;border-radius:99px;font-weight:600;font-size:.85rem;opacity:0;transition:.3s;z-index:120;pointer-events:none;max-width:90vw;text-align:center}
 #toast.show{opacity:1;transform:translate(-50%,0)}
 footer{border-top:1px solid var(--bd);padding:36px 0;text-align:center;font-size:.85rem}::selection{background:var(--red);color:#fff}body{background:radial-gradient(900px 520px at 82% -6%,rgba(207,210,215,.07),transparent 70%),radial-gradient(620px 420px at -4% 38%,rgba(196,55,42,.06),transparent 70%),var(--bg);background-repeat:no-repeat}:root[data-theme='light'] body{background:var(--bg)}h1,h2,h3,.logo,.stat b,.m b,.path b{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600}.logo{font-size:1.7rem;letter-spacing:.2em}.hero h1{font-weight:600;letter-spacing:.05em;line-height:.95}.hero h1 span{background:linear-gradient(180deg,#fff,#c9ccd1 45%,#6f737b);-webkit-background-clip:text;background-clip:text;color:transparent}:root[data-theme='light'] .hero h1 span{background:linear-gradient(180deg,#3a3d44,#141416);-webkit-background-clip:text;background-clip:text}h2{font-size:clamp(2.3rem,6vw,3.7rem)}.card h3{font-size:1.7rem}.stat b{font-size:2.8rem}.m b{font-size:1.8rem}.path b{font-size:1.4rem}.pp h3{font-size:1.8rem;margin-bottom:6px}.btn{font-family:'DM Sans',sans-serif;font-weight:600;letter-spacing:.14em;background:linear-gradient(180deg,var(--b1),var(--b2));color:var(--bt);border-color:var(--b2)}.btn.o{background:transparent;color:var(--tx);border-color:var(--dim)}.btn.o:hover{border-color:var(--tx)}.lbl::before{content:'';display:inline-block;width:24px;height:1px;background:var(--red);margin-right:10px;vertical-align:middle}.pill{margin:0 6px 8px 0}.pill.gold{border-color:var(--gold);background:rgba(201,164,92,.08)}.pill.live{border-color:var(--bd);color:var(--tx);background:var(--sf)}.pill i{background:var(--red);box-shadow:0 0 10px var(--red)}.role b{border-right-color:var(--red)}.gold{color:var(--gold)!important}.card.fl{box-shadow:inset 0 1px 0 var(--gold)}.flag{border-left-color:var(--red)}input,textarea{caret-color:var(--red)}section+section{border-top:1px solid var(--bd)}.pp{max-width:640px;border:1px solid var(--bd);background:var(--sf);border-radius:14px;padding:18px 22px}.pp p{margin:0}.sw{display:flex;gap:12px}.sw button{width:48px;height:48px;border-radius:50%;border:1px solid var(--dim);cursor:pointer;transition:transform .2s}.sw button:hover{transform:scale(1.12)}#stars{position:fixed;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none}:root[data-theme='light'] #stars{display:none}.hh{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center}.ph{position:relative;margin:0;width:min(300px,32vw);aspect-ratio:4/5;border-radius:999px 999px 20px 20px;overflow:hidden;border:1px solid var(--dim);background:radial-gradient(circle at 50% 30%,var(--sf2),var(--sf));display:grid;place-items:center;box-shadow:0 30px 80px rgba(0,0,0,.5)}.ph span{font:600 7rem 'Cormorant Garamond',Georgia,serif;color:var(--dim);opacity:.5}.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.ph::after{content:'';position:absolute;inset:0;box-shadow:inset 0 0 60px rgba(0,0,0,.4);pointer-events:none}.start{display:flex;flex-direction:column;align-items:center;text-align:center;margin-top:56px}.sh{font-size:clamp(1.8rem,5vw,3rem);margin:6px 0 10px;max-width:560px}.bigarrow{width:72px;height:140px;flex:none;color:var(--red);filter:drop-shadow(0 0 14px rgba(196,55,42,.55));animation:bob 1.6s ease-in-out infinite}@keyframes bob{50%{transform:translateY(14px)}}.paths{margin-top:8px}#nudge{position:fixed;left:0;right:0;margin:0 auto;width:max-content;bottom:calc(22px + env(safe-area-inset-bottom,0px));z-index:55;display:flex;align-items:center;gap:10px;background:var(--red);color:#fff;font:600 .78rem 'DM Sans',sans-serif;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:12px 20px;border-radius:99px;box-shadow:0 10px 40px rgba(196,55,42,.45);animation:bob 1.6s ease-in-out infinite;transition:opacity .3s}#nudge.gone{opacity:0;pointer-events:none}.hl{box-shadow:0 0 0 1px var(--ac),0 0 50px rgba(207,210,215,.2)!important;border-color:var(--ac)!important;transition:.4s}@media(max-width:760px){.hh{grid-template-columns:1fr}.ph{width:210px;order:-1}.bigarrow{width:52px;height:100px}}@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+
+/* ===== a11y utilities ===== */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.skip{position:fixed;left:12px;top:-70px;z-index:400;background:var(--ac);color:var(--bg);padding:10px 16px;border-radius:8px;font:600 .85rem 'DM Sans';text-decoration:none;transition:top .2s}
+.skip:focus{top:calc(env(safe-area-inset-top,0px) + 12px)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.card:focus-visible{outline-offset:2px}
+
+/* ============ ENTRY GATE ============ */
+html.gated,html.gated body{overflow:hidden}
+html.nogate #gate{display:none}
+#gate{position:fixed;inset:0;z-index:300;display:grid;place-items:center;text-align:center;padding:26px;background:var(--bg);overflow:hidden;transition:background .35s ease}
+#gate.off{display:none}
+#gate .g-inner{position:relative;z-index:3;max-width:520px;transition:transform .55s cubic-bezier(.4,0,.7,.4),opacity .5s ease}
+#gate.go .g-inner{transform:scale(1.5);opacity:0}
+#gate .ring{position:absolute;top:50%;left:50%;width:min(340px,76vw);aspect-ratio:1;transform:translate(-50%,-50%);border:1px solid color-mix(in srgb,var(--dim) 55%,transparent);border-radius:50%;z-index:1;pointer-events:none;opacity:.55;box-shadow:inset 0 0 90px rgba(201,164,92,.05)}
+#gate .ring .spark{position:absolute;top:-3px;left:50%;width:6px;height:6px;margin-left:-3px;border-radius:50%;background:var(--gold);box-shadow:0 0 16px 4px rgba(201,164,92,.55)}
+#gate .orbs{position:absolute;inset:0}
+#gate .orbs i{position:absolute;top:50%;left:50%;border-radius:50%;background:var(--ac);box-shadow:0 0 6px var(--ac);animation:tw 2.8s ease-in-out infinite}
+@keyframes tw{50%{opacity:.12}}
+#gate .flare{position:absolute;inset:0;z-index:4;pointer-events:none;opacity:0;background:radial-gradient(circle at 50% 50%,#fff 0%,rgba(255,255,255,.75) 26%,transparent 62%)}
+#gate.go .ring{animation:ringOut 1.15s cubic-bezier(.45,0,.9,.4) forwards}
+@keyframes ringOut{to{transform:translate(-50%,-50%) scale(38);opacity:0}}
+#gate.go .orbs{animation:orbOut 1.15s cubic-bezier(.45,0,.9,.4) forwards}
+@keyframes orbOut{to{transform:scale(46);opacity:0;filter:blur(1px)}}
+#gate.go .flare{animation:flareOut 1.15s ease-out forwards}
+@keyframes flareOut{0%{opacity:0}58%{opacity:.06}84%{opacity:.92}100%{opacity:0}}
+.gtitle{font-size:clamp(1.75rem,5.4vw,2.95rem);font-weight:600;line-height:1.06;margin:10px 0 8px}
+.gtitle span{color:var(--gold);font-style:italic}
+.gsub{font-size:.9rem;margin:0}
+.gbtns{position:relative;z-index:5;display:flex;gap:12px;justify-content:center;margin-top:28px}
+.gbtn{flex:1 1 0;max-width:176px;min-height:104px;display:grid;place-content:center;justify-items:center;gap:1px;background:var(--sf);border:1px solid var(--bd);border-radius:16px;color:var(--tx);font:600 .82rem 'DM Sans';letter-spacing:.13em;text-transform:uppercase;cursor:pointer;transition:.25s}
+.gbtn:hover,.gbtn:focus-visible{border-color:var(--gold);transform:translateY(-3px)}
+.gbtn .d{width:26px;height:26px;border-radius:50%;margin-bottom:7px;border:1px solid var(--dim)}
+.gbtn .d.light{background:linear-gradient(160deg,#fff,#eeebe5)}
+.gbtn .d.dark{background:linear-gradient(160deg,#2c2c33,#0a0a0c)}
+.gbtn em{font:500 .6rem 'DM Sans';font-style:normal;letter-spacing:.16em;color:var(--dim)}
+.gskip{position:absolute;top:calc(env(safe-area-inset-top,0px) + 16px);right:18px;z-index:6;background:none;border:1px solid var(--bd);color:var(--dim);font:600 .72rem 'DM Sans';letter-spacing:.1em;text-transform:uppercase;padding:8px 14px;border-radius:99px;cursor:pointer;transition:.2s}
+.gskip:hover{color:var(--tx);border-color:var(--ac)}
+
+/* ============ RECEIPTS ============ */
+.pgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin-top:22px}
+.proof{background:var(--sf);border:1px solid var(--bd);border-left:2px solid var(--gold);border-radius:0 12px 12px 0;padding:16px 18px}
+.proof b{display:block;font:600 1.12rem 'Cormorant Garamond',Georgia,serif;letter-spacing:.02em}
+.proof span{font-size:.79rem;color:var(--dim)}
+.proof.k b{color:var(--gold)}
+
+/* ============ NONPROFIT BANNER ============ */
+#npbar{position:fixed;left:50%;top:calc(env(safe-area-inset-top,0px) + 10px);transform:translate(-50%,-160%);z-index:70;display:flex;align-items:center;gap:10px;background:var(--sf);border:1px solid var(--gold);border-radius:99px;padding:9px 8px 9px 16px;box-shadow:0 18px 50px rgba(0,0,0,.28);transition:transform .55s cubic-bezier(.2,.9,.3,1.15),opacity .4s;max-width:calc(100vw - 22px)}
+#npbar.in{transform:translate(-50%,0)}
+#npbar.out{transform:translate(-50%,-160%);opacity:0}
+#npbar .npdot{flex:none;width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px var(--gold);animation:p 2s infinite}
+#npopen{background:none;border:0;color:var(--tx);font:600 .8rem 'DM Sans';text-align:left;cursor:pointer;padding:0;line-height:1.25}
+#npopen em{display:block;font:400 .7rem 'DM Sans';font-style:normal;color:var(--dim)}
+#npclose{flex:none;background:none;border:0;color:var(--dim);font-size:1.15rem;line-height:1;padding:4px 8px;border-radius:99px;cursor:pointer}
+#npclose:hover{color:var(--tx)}
+
+/* ============ NONPROFIT PANEL ============ */
+#np{position:fixed;inset:0;z-index:250;background:rgba(0,0,0,.62);backdrop-filter:blur(7px);display:none;place-items:center;padding:18px}
+#np.show{display:grid}
+.npc{width:100%;max-width:620px;max-height:min(80vh,660px);overflow:auto;background:var(--sf);border:1px solid var(--bd);border-radius:16px;padding:22px 24px}
+.nph{display:flex;align-items:flex-start;justify-content:space-between;gap:14px}
+#npx{background:none;border:1px solid var(--bd);border-radius:99px;color:var(--dim);width:32px;height:32px;font-size:1.1rem;line-height:1;cursor:pointer;flex:none}
+#npx:hover{color:var(--tx);border-color:var(--ac)}
+.npc h2{font-size:clamp(1.5rem,4.4vw,2.1rem);margin:8px 0 10px}
+.npc ol{margin:0;padding-left:20px;display:grid;gap:12px}
+.npc li{font-size:.92rem}
+.npc li b{display:block;font:600 .98rem 'DM Sans';color:var(--ac)}
+.npc li span{color:var(--dim);font-size:.88rem}
+.npf{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px;border-top:1px solid var(--bd);padding-top:18px}
+
+/* ============ PRINT ============ */
+@media print{
+#gate,#npbar,#np,#nudge,#pal,#toast,#stars,header .ib,.skip{display:none!important}
+html,body{background:#fff!important;color:#000!important}
+body{font-size:11pt}
+section{padding:22px 0;break-inside:avoid;border-top:1px solid #ddd!important}
+.rv{opacity:1!important;transform:none!important}
+.card{border:1px solid #bbb!important;break-inside:avoid}
+.card .more{display:block!important}.card .hint{display:none!important}
+.hero h1 span{color:#000!important;-webkit-text-fill-color:#000!important}
+.hero{padding-top:0}
+.btn{border:1px solid #000!important;background:#fff!important;color:#000!important}
+.proof{border-left:2px solid #000!important}
+.ph{box-shadow:none}
+header{position:static}
+a{text-decoration:none}
+}
 </style>
+<script>
+(function(){var d=document.documentElement;
+ try{var t=localStorage.getItem('tk-theme');d.dataset.theme=t||'light';
+  if(localStorage.getItem('tk-gate')==='1'||location.hash){d.classList.add('nogate')}else{d.classList.add('gated')}}
+ catch(e){d.dataset.theme='light';d.classList.add('gated')}})();
+</script>
+<noscript><style>#gate,#npbar{display:none!important}html,html body{overflow:auto!important}</style></noscript>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Shamonte Knight","alternateName":"Tae Knight","jobTitle":"UI/UX Developer","email":"mailto:knight.shamonte@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Atlanta","addressRegion":"GA","addressCountry":"US"},"alumniOf":["Georgia State University","Texas Southern University"],"sameAs":["https://github.com/SHAMONTEK","https://www.linkedin.com/in/shamonte"],"knowsAbout":["UI/UX design","Full-stack development","Fintech","AI orchestration","Product management"]}
+</script>
 </head>
-<body data-mode="plain"><canvas id='stars' aria-hidden='true'></canvas>
-<header><div class="w"><nav>
+<body data-mode="plain">
+<a class="skip" href="#home">Skip to content</a>
+<div id="gate" role="dialog" aria-modal="true" aria-labelledby="gt">
+<div class="ring" aria-hidden="true"><span class="spark"></span><div class="orbs" id="orbs"></div></div>
+<div class="flare" aria-hidden="true"></div>
+<div class="g-inner">
+<p class="lbl">Shamonte “Tae” Knight</p>
+<h2 class="gtitle" id="gt">Before we start —<br><span>I care about your eyes.</span></h2>
+<p class="dim gsub">Pick a room to walk into.</p>
+<div class="gbtns">
+<button class="gbtn" data-c="light"><i class="d light" aria-hidden="true"></i>Light<em>daylight</em></button>
+<button class="gbtn" data-c="dark"><i class="d dark" aria-hidden="true"></i>Dark<em>after hours</em></button>
+</div>
+</div>
+<button class="gskip" id="gskip">Skip →</button>
+</div>
+
+<div id="npbar" role="complementary" aria-label="Nonprofit notice">
+<span class="npdot" aria-hidden="true"></span>
+<button id="npopen">Run a nonprofit?<em>Here’s how I’d fix the site.</em></button>
+<button id="npclose" aria-label="Dismiss">×</button>
+</div>
+
+<div id="np" role="dialog" aria-modal="true" aria-labelledby="npt">
+<div class="npc">
+<div class="nph"><p class="lbl" style="margin:0">For nonprofits</p><button id="npx" aria-label="Close">×</button></div>
+<h2 id="npt">If NSORO hired me, here’s week one.</h2>
+<p class="dim" style="margin:0 0 16px;font-size:.9rem">Not a redesign pitch. A repair list, in the order that helps families fastest.</p>
+<ol>
+<li><b>Donate in two taps.</b><span>Sticky donate button, three preset amounts, Apple and Google Pay, no account required. Right now a donor has to want it badly.</span></li>
+<li><b>One real “get help” page.</b><span>Plain words, big type, phone number at the very top. A parent in a hurry should not have to hunt.</span></li>
+<li><b>Photos of actual kids, with consent.</b><span>Stock photos read as fake to people who know the work. Real faces, signed releases, first names only.</span></li>
+<li><b>Program pages that answer three questions.</b><span>Who it’s for, when it meets, what it costs. Every program, no exceptions.</span></li>
+<li><b>Volunteer and signup without a phone call.</b><span>A form and a confirmation email. Most people will not call during business hours.</span></li>
+<li><b>Speed and contrast.</b><span>Most parents are on cheap phones and aging eyes. Three-second load, AA contrast, readable at 200% zoom.</span></li>
+<li><b>One number a month that matters.</b><span>Pick the metric the board actually reads, track it in a sheet, ignore the dashboards nobody opens.</span></li>
+</ol>
+<p class="dim" style="font-size:.88rem;margin:14px 0 0">Two-week slices, donate flow first, and a handoff doc so staff can edit without calling me.</p>
+<div class="npf"><a class="btn" href="#contact">Let’s talk</a><button class="btn o" id="npx2">Close</button></div>
+</div>
+</div>
+
+<canvas id='stars' aria-hidden='true'></canvas>
+<header><div class="w"><nav aria-label="Sections">
 <a class='logo' href='#home'>TAE<span style='color:var(--gold)'>.</span></a>
-<a class="l" href="#about">About</a><a class="l" href="#projects">Projects</a><a class="l" href="#demo">Live Demo</a><a class="l" href="#contact">Contact</a>
-<button class="ib" id="pk" title="Open command menu">Menu <kbd>Ctrl K</kbd></button>
-<button class="ib" id="th" title="Toggle light/dark">◐</button>
+<a class="l" href="#about">About</a><a class="l" href="#proof">Proof</a><a class="l" href="#projects">Projects</a><a class="l" href="#demo">Live Demo</a><a class="l" href="#contact">Contact</a>
+<button class="ib" id="pk" title="Open command menu" aria-expanded="false" aria-controls="pal">Menu <kbd>Ctrl K</kbd></button>
+<button class="ib" id="th" title="Toggle light/dark" aria-label="Toggle light and dark theme">◐</button>
 </nav></div></header>
 
 <main class="w">
@@ -97,14 +248,14 @@ footer{border-top:1px solid var(--bd);padding:36px 0;text-align:center;font-size
 <div class='role'>I design &amp; build <b id='ty'></b></div>
 <p class='dim' style='max-width:620px'>Everyone calls me Tae. UI/UX developer and product architect out of Atlanta. I sketch it by hand, direct AI to build it, and ship it. Building by night, banking by day.</p>
 <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:18px">
-<a class="btn" href="#projects">See my work</a><a class="btn o" href="#contact">Hire me</a><a class="btn o" href="ShaMonteKnight%20Resume.pdf" target="_blank" rel="noopener">Resume</a></div></div><figure class='ph'><span>T</span><img src='tae.jpg' alt='Shamonte “Tae” Knight' onerror='this.remove()'></figure></div>
+<a class="btn" href="#projects">See my work</a><a class="btn o" href="#contact">Hire me</a><a class="btn o" href="ShaMonteKnight%20Resume.pdf" target="_blank" rel="noopener">Resume</a></div></div><figure class='ph'><span aria-hidden='true'>T</span><img src='tae.jpg' alt='Shamonte “Tae” Knight' decoding='async' onerror='this.remove()'></figure></div>
 <div id='paths' class='start'><p class='lbl'>Start here</p><h2 class='sh'>Pick one. I’ll take you to what you need.</h2><svg class='bigarrow' viewBox='0 0 60 120' aria-hidden='true'><path d='M30 4v100M6 80l24 28 24-28' fill='none' stroke='currentColor' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/></svg></div>
 <div class="paths">
 <button class="path" data-go="projects" data-mode="plain"><b>👋 I’m new to tech</b><span>Plain-English tour of what I built and why it matters.</span></button>
 <button class="path" data-go="contact" data-mode="plain"><b>🔎 I’m hiring</b><span>Resume, contact and the short version. Two clicks.</span></button>
 <button class="path" data-go="projects" data-mode="tech"><b>⚙️ I’m an engineer</b><span>Architecture, stacks and internals. Press Ctrl K anytime.</span></button>
 </div>
-<div class="stats"><div class="stat"><b data-n="5">0</b><span>Projects built</span></div><div class="stat"><b data-n="4">0</b><span>Stacks used</span></div><div class='stat'><b class='gold' data-n='2026'>0</b><span>B.S. Computer Science</span></div><div class='stat'><b>BofA</b><span>Day job, right now</span></div></div>
+<div class="stats"><div class="stat"><b data-n="5">0</b><span>Projects built</span></div><div class="stat"><b data-n="4">0</b><span>Stacks used</span></div><div class='stat'><b class='gold' data-n='2026'>0</b><span>B.S. Computer Science</span></div><div class="stat"><b>BofA</b><span>Day job, right now</span></div></div>
 </section>
 
 <section id="about" class="rv">
@@ -113,6 +264,18 @@ footer{border-top:1px solid var(--bd);padding:36px 0;text-align:center;font-size
 <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:16px">
 <a class="btn o" target="_blank" rel="noopener" href="https://www.wellroot.org/trials-to-triumph-shamonte-knights-journey-to-adulthood/">Read my story</a>
 <a class="btn o" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=HOvopfXhw04">Watch the video</a></div><p class='lbl' style='margin-top:44px'>How I build</p><div class='seg' id='steps'><button class='on' data-s='0'>01 Dream</button><button data-s='1'>02 Draw</button><button data-s='2'>03 Direct</button><button data-s='3'>04 Deliver</button></div><div class='pp' id='pp'></div><p class='lbl' style='margin-top:36px'>Range</p><div class='chips'><span class='chip'>UI/UX design</span><span class='chip'>Product thinking</span><span class='chip'>Full-stack</span><span class='chip'>AI orchestration</span><span class='chip'>Fintech</span><span class='chip'>Music &amp; choreography</span><span class='chip'>Banking</span></div><p class='lbl' style='margin-top:36px'>My palette: tap a swatch</p><div class='sw' id='sw'><button aria-label='Obsidian' style='background:#09090b' data-t='Obsidian: the canvas. Space is the luxury.'></button><button aria-label='Platinum' style='background:#cfd2d7' data-t='Platinum: what matters. Focus goes here.'></button><button aria-label='Crimson' style='background:#c4372a' data-t='Crimson: what is live or at risk.'></button><button aria-label='Gold' style='background:#c9a45c' data-t='Gold: only what is earned. Degree, flagship, signature.'></button></div>
+</section>
+
+<section id="proof" class="rv">
+<p class="lbl">Receipts</p><h2>Not a hobby.</h2>
+<p class="dim" style="max-width:640px">Two Dean’s List semesters, two universities, a robotics team, and a bank floor where real people bring real money problems. Most portfolios leave this part out.</p>
+<div class="pgrid">
+<div class="proof k"><b>Dean’s List</b><span>Twice. Not once.</span></div>
+<div class="proof"><b>Texas Southern University</b><span>First Dean’s List</span></div>
+<div class="proof"><b>Georgia State University</b><span>B.S. Computer Science, 2026</span></div>
+<div class="proof"><b>Robotics team</b><span>Wiring, soldering, losing gracefully</span></div>
+<div class="proof"><b>Bank of America</b><span>Relationship Banker, on the floor daily</span></div>
+</div>
 </section>
 
 <section id="projects" class="rv">
@@ -128,9 +291,10 @@ footer{border-top:1px solid var(--bd);padding:36px 0;text-align:center;font-size
 <p class="dim" style="max-width:640px">A simplified, in-browser version of the idea behind PhishRx. Paste a suspicious message or tap an example. (Rule-based demo only; the real project uses an AI pipeline.)</p>
 <div class="demo">
 <div class="chips"><button class="chip" data-ex="0">Fake bank alert</button><button class="chip" data-ex="1">Gift card scam</button><button class="chip" data-ex="2">Normal message</button></div>
+<label class="sr-only" for="msg">Message to check for phishing</label>
 <textarea id="msg" rows="4" placeholder="Paste a text or email here…"></textarea>
 <div class="bar"><i id="fill"></i></div>
-<b id="verdict">Waiting for a message…</b>
+<b id="verdict" aria-live="polite">Waiting for a message…</b>
 <div id="flags"></div>
 </div>
 </section>
@@ -138,19 +302,22 @@ footer{border-top:1px solid var(--bd);padding:36px 0;text-align:center;font-size
 <section id="contact" class="rv">
 <p class="lbl">Contact</p><h2>Let’s build something real.</h2>
 <div class="demo" style="max-width:560px">
-<div class="cg"><input id="cn" placeholder="Your name"><input id="ce" type="email" placeholder="Your email"></div>
+<div class="cg"><div><label class="sr-only" for="cn">Your name</label><input id="cn" placeholder="Your name" autocomplete="name"></div><div><label class="sr-only" for="ce">Your email</label><input id="ce" type="email" inputmode="email" placeholder="Your email" autocomplete="email"></div></div>
+<label class="sr-only" for="cm">What are you building?</label>
 <textarea id="cm" rows="4" placeholder="What are you building?" style="margin-top:14px"></textarea>
-<div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:14px"><button class="btn" id="send">Send via email app</button><a class='btn o' href='ShaMonteKnight%20Resume.pdf' target='_blank' rel='noopener'>Resume</a><a class="btn o" target="_blank" rel="noopener" href="https://www.linkedin.com/in/shamonte">LinkedIn</a><a class="btn o" target="_blank" rel="noopener" href="https://github.com/SHAMONTEK">GitHub</a></div>
+<div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:14px"><button class="btn" id="send">Send via email app</button><button class="btn o" id="copyEmail">Copy email</button><a class='btn o' href='ShaMonteKnight%20Resume.pdf' target='_blank' rel='noopener'>Resume</a><a class="btn o" target="_blank" rel="noopener" href="https://www.linkedin.com/in/shamonte">LinkedIn</a><a class="btn o" target="_blank" rel="noopener" href="https://github.com/SHAMONTEK">GitHub</a></div>
+<p class="dim" style="margin:14px 0 0;font-size:.85rem">knight.shamonte@gmail.com · Atlanta, GA</p>
 </div>
 </section>
 </main>
 <footer><div class="w dim">© <span id='yr'></span> Shamonte “Tae” Knight · knight.shamonte@gmail.com · Press <kbd>Ctrl K</kbd> or <kbd>/</kbd> to jump anywhere<br>Design note: gold marks what’s earned, red marks what’s live.</div></footer>
 
-<div id="pal"><div id="pb"><input id="pi" placeholder="Type a command or project…" autocomplete="off"><div id="pl"></div></div></div>
-<div id="toast"></div><a id='nudge' href='#paths'><span>Pick your path</span><svg viewBox='0 0 24 24' width='22' height='22' aria-hidden='true'><path d='M12 4v15M5 13l7 7 7-7' fill='none' stroke='currentColor' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/></svg></a>
+<div id="pal" role="dialog" aria-modal="true" aria-label="Command menu"><div id="pb"><input id="pi" placeholder="Type a command or project…" autocomplete="off" aria-label="Search commands"><div id="pl"></div></div></div>
+<div id="toast" role="status" aria-live="polite"></div><a id='nudge' href='#paths'><span>Pick your path</span><svg viewBox='0 0 24 24' width='22' height='22' aria-hidden='true'><path d='M12 4v15M5 13l7 7 7-7' fill='none' stroke='currentColor' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/></svg></a>
 
 <script>
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
 const P=[
 {id:"phishrx",n:"PhishRx / PHISH-ER",c:"Engineering",s:["JavaScript","Python","Flask","Chrome API","AI/ML","OCR"],pl:"A Chrome add-on that spots scam messages and warns you before you click. Built to protect people who aren’t tech-savvy.",t:"MV3 Chrome extension → Flask API → ML classifier, plus OCR for image-based phishing. Designed around low-latency inference.",m:{"Detection":"98%","Latency":"120ms"},gh:"https://github.com/SHAMONTEK/PHISH-ER"},
 {id:"ems",n:"Employee Management System",c:"Engineering",s:["Java","JavaFX","CSS"],pl:"A desktop app for managing staff records that feels smooth instead of dated.",t:"JavaFX MVC with CRUD, custom CSS theming and animated scene transitions.",m:{"UI":"60fps","Pattern":"MVC"},gh:"https://github.com/SHAMONTEK/Employee-Management-System"},
@@ -158,15 +325,17 @@ const P=[
 {id:'sharkfin',f:1,n:'SharkFin',c:'★ Flagship · Fintech UI',s:["Kotlin","Jetpack Compose","Firebase","AI/ML"],pl:"A money app with a coach that notices your spending habits and talks you through them.",t:"Android, local-first. Two-layer on-device coach (NLP + behavioral patterns), no external AI API.",m:{"Platform":"Android","AI":"On-device"},gh:"https://github.com/SHAMONTEK"},
 {id:"actors",n:"A.C.T.O.R.S. Engine",c:"Engineering",s:["Python","AI/ML","NLP"],pl:"An AI design that explains why it gave an answer, so it’s safer to trust.",t:"Context-aware reasoning pipeline with explainability and guardrail layers. Prototype stage.",m:{"Focus":"AI safety","Status":"R&D"},gh:"https://github.com/SHAMONTEK/actors"}];
 P.sort((a,b)=>(b.f||0)-(a.f||0));const g=$('#grid'),ch=$('#chips');let sk=null;
-function draw(){g.innerHTML=P.map(p=>`<div class="card${p.f?' fl':''}${sk&&!p.s.includes(sk)?' dim2':''}" data-id="${p.id}"><span class="tag${p.f?' gold':''}">${p.c}</span><h3>${p.n}</h3><p class="pl">${p.pl}</p><p class="t dim">${p.t}</p><div class="hint">Tap to open ↓</div><div class="more"><div class="m">${Object.entries(p.m).map(([k,v])=>`<div><b>${v}</b><span>${k}</span></div>`).join("")}</div><div class="chips">${p.s.map(x=>`<span class="chip">${x}</span>`).join("")}</div><a class="btn o" target="_blank" rel="noopener" href="${p.gh}">View code</a> <button class="btn o" data-x="1">Close</button></div></div>`).join("")}
+function draw(){g.innerHTML=P.map(p=>`<div class="card${p.f?' fl':''}${sk&&!p.s.includes(sk)?' dim2':''}" data-id="${p.id}" role="button" tabindex="0" aria-expanded="false"><span class="tag${p.f?' gold':''}">${p.c}</span><h3>${p.n}</h3><p class="pl">${p.pl}</p><p class="t dim">${p.t}</p><div class="hint">Tap to open ↓</div><div class="more"><div class="m">${Object.entries(p.m).map(([k,v])=>`<div><b>${v}</b><span>${k}</span></div>`).join("")}</div><div class="chips">${p.s.map(x=>`<span class="chip">${x}</span>`).join("")}</div><a class="btn o" target="_blank" rel="noopener" href="${p.gh}">View code</a> <button class="btn o" data-x="1">Close</button></div></div>`).join("")}
 function chips(){const a=[...new Set(P.flatMap(p=>p.s))].sort();ch.innerHTML=a.map(x=>`<button class="chip${x===sk?" on":""}">${x}</button>`).join("")}
 ch.onclick=e=>{if(e.target.classList.contains("chip")){sk=sk===e.target.textContent?null:e.target.textContent;chips();draw()}};
-g.onclick=e=>{const c=e.target.closest(".card");if(!c)return;if(e.target.dataset.x){c.classList.remove("open");return}if(!c.classList.contains("open")){$$(".card.open").forEach(x=>x.classList.remove("open"));c.classList.add("open");c.scrollIntoView({behavior:"smooth",block:"center"})}};
+function openCard(c){$$(".card.open").forEach(x=>{x.classList.remove("open");x.setAttribute("aria-expanded","false")});c.classList.add("open");c.setAttribute("aria-expanded","true");c.scrollIntoView({behavior:RM?"auto":"smooth",block:"center"})}
+g.onclick=e=>{const c=e.target.closest(".card");if(!c)return;if(e.target.closest("a"))return;if(e.target.dataset.x){c.classList.remove("open");c.setAttribute("aria-expanded","false");return}if(!c.classList.contains("open"))openCard(c)};
+g.onkeydown=e=>{if(e.key!=="Enter"&&e.key!==" ")return;const c=e.target.closest(".card");if(!c||e.target.closest("a,button"))return;e.preventDefault();c.classList.contains("open")?(c.classList.remove("open"),c.setAttribute("aria-expanded","false")):openCard(c)};
 function mode(m){document.body.dataset.mode=m;$$("#seg button").forEach(b=>b.classList.toggle("on",b.dataset.m===m));toast(m==="tech"?"Engineer view on":"Plain English on")}
 $("#seg").onclick=e=>e.target.dataset.m&&mode(e.target.dataset.m);
-$$('.path').forEach(b=>b.onclick=()=>{const go=b.dataset.go,m=b.dataset.mode;mode(m);$('#'+go).scrollIntoView({behavior:'smooth'});try{history.replaceState(null,'','#'+go)}catch(e){}setTimeout(()=>{if(go==='projects'){toast(m==='tech'?'Engineer view is on. Press Ctrl K to jump anywhere.':'Plain English is on. SharkFin is open: start there.');const c=$('[data-id=sharkfin]');if(c&&!c.classList.contains('open'))c.click()}else{toast('Resume, email and LinkedIn are right here.');const c=$('#contact .demo');if(c){c.classList.add('hl');setTimeout(()=>c.classList.remove('hl'),2200)}}},650)});
+$$('.path').forEach(b=>b.onclick=()=>{const go=b.dataset.go,m=b.dataset.mode;mode(m);$('#'+go).scrollIntoView({behavior:RM?'auto':'smooth'});try{history.replaceState(null,'','#'+go)}catch(e){}setTimeout(()=>{if(go==='projects'){toast(m==='tech'?'Engineer view is on. Press Ctrl K to jump anywhere.':'Plain English is on. SharkFin is open: start there.');const c=$('[data-id=sharkfin]');if(c&&!c.classList.contains('open'))c.click()}else{toast('Resume, email and LinkedIn are right here.');const c=$('#contact .demo');if(c){c.classList.add('hl');setTimeout(()=>c.classList.remove('hl'),2200)}}},650)});
 let tt;function toast(t){const e=$("#toast");e.textContent=t;e.classList.add("show");clearTimeout(tt);tt=setTimeout(()=>e.classList.remove("show"),2200)}
-function theme(){const d=document.documentElement,cur=d.dataset.theme||'dark',n=cur==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("tk-theme",n)}catch(e){}}
+function theme(){const d=document.documentElement,cur=d.dataset.theme||'light',n=cur==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("tk-theme",n)}catch(e){}const m=$('#tc');if(m)m.content=n==='dark'?'#09090b':'#f4f2ee'}
 try{const s=localStorage.getItem("tk-theme");if(s)document.documentElement.dataset.theme=s}catch(e){}
 $("#th").onclick=theme;
 $("#yr").textContent=new Date().getFullYear();
@@ -177,26 +346,56 @@ const R=['interfaces people trust.','fintech that feels human.','scam-fighting A
 const co=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;co.unobserve(e.target);const n=+e.target.dataset.n;let i=0;const st=Math.max(1,Math.ceil(n/40));const iv=setInterval(()=>{i=Math.min(n,i+st);e.target.textContent=i;if(i>=n)clearInterval(iv)},25)}));$$("[data-n]").forEach(x=>co.observe(x));
 const rv=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add("in")),{threshold:.08});$$(".rv").forEach(x=>rv.observe(x));
 // scrollspy
-const sp=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)$$("nav a.l").forEach(a=>a.classList.toggle("on",a.hash==="#"+e.target.id))}),{rootMargin:"-45% 0px -50%"});$$("section").forEach(s=>sp.observe(s));
+const sp=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)$$("nav a.l").forEach(a=>{const on=a.hash==="#"+e.target.id;a.classList.toggle("on",on);on?a.setAttribute("aria-current","true"):a.removeAttribute("aria-current")})}),{rootMargin:"-45% 0px -50%"});$$("section").forEach(s=>sp.observe(s));
 // demo
 const EX=["URGENT: Your Bank of America account is locked. Verify your password now at http://bit.ly/secure-bofa-login or it will be closed within 24 hours.","Hey! I’m stuck overseas. Please buy 4 Apple gift cards for $100 each and send me the codes. Don’t tell anyone, I’ll repay you.","Hi Tae, are we still on for lunch Thursday at noon? Let me know if you need to move it."];
 const RU=[[/urgent|immediately|within \d+ hours|act now|final notice|suspended|locked/i,25,"Pressure tactics: scammers rush you so you won’t think."],[/verify|confirm your (account|identity)|password|ssn|social security|login/i,25,"Asks for credentials or sensitive info. Real banks don’t text this."],[/gift ?cards?|wire|crypto|bitcoin|western union|zelle me/i,30,"Requests untraceable payment."],[/bit\.ly|tinyurl|t\.co|https?:\/\/\d{1,3}(\.\d{1,3}){3}|\.(xyz|top|click|ru)\b/i,25,"Suspicious or disguised link."],[/don’t tell|don't tell|keep this secret|stuck overseas/i,20,"Secrecy plus a sob story is a classic manipulation pattern."]];
 function scan(){const t=$("#msg").value.trim(),f=$("#fill"),v=$("#verdict"),fl=$("#flags");if(!t){f.style.width=0;v.textContent="Waiting for a message…";fl.innerHTML="";return}let s=0,h=[];RU.forEach(([r,w,m])=>{if(r.test(t)){s+=w;h.push(m)}});s=Math.min(100,s);f.style.width=Math.max(s,6)+"%";f.style.background=s>=60?'var(--red)':s>=30?'var(--gold)':'var(--ac)';v.textContent=s>=60?"🚨 Very likely a scam ("+s+"/100)":s>=30?"⚠️ Suspicious ("+s+"/100)":"✅ Looks okay ("+s+"/100)";fl.innerHTML=h.map(x=>`<div class="flag">${x}</div>`).join('');v.textContent=v.textContent.replace(/^\S+\s/,'')}
 $("#msg").oninput=scan;$$("[data-ex]").forEach(b=>b.onclick=()=>{$("#msg").value=EX[b.dataset.ex];scan()});
 // contact
-$("#send").onclick=()=>{const n=$("#cn").value,e=$("#ce").value,m=$("#cm").value;if(!m.trim()){toast("Add a message first");return}location.href="mailto:knight.shamonte@gmail.com?subject="+encodeURIComponent("Portfolio message from "+(n||"a visitor"))+"&body="+encodeURIComponent(m+"\n\n— "+n+" "+e)}
+const EMAIL="knight.shamonte@gmail.com";
+$("#send").onclick=()=>{const n=$("#cn").value.trim(),e=$("#ce").value.trim(),m=$("#cm").value.trim();if(!m){toast("Add a message first");$("#cm").focus();return}if(e&&!/^[^@\s]+@[^@\s]+\.[a-z]{2,}$/i.test(e)){toast("That email looks off");$("#ce").focus();return}location.href="mailto:"+EMAIL+"?subject="+encodeURIComponent("Portfolio message from "+(n||"a visitor"))+"&body="+encodeURIComponent(m+"\n\n— "+n+" "+e)};
+$("#copyEmail").onclick=async()=>{try{await navigator.clipboard.writeText(EMAIL);toast("Email copied")}catch(e){location.href="mailto:"+EMAIL}};
 // palette
-const C=[["Go to Home","#home"],["Go to About","#about"],["Go to Projects","#projects"],["Try the live demo","#demo"],["Contact me","#contact"],["Switch to Plain English",()=>mode("plain")],["Switch to Engineer view",()=>mode("tech")],["Toggle light/dark",theme],["Open GitHub",()=>open("https://github.com/SHAMONTEK")],["Open LinkedIn",()=>open("https://www.linkedin.com/in/shamonte")],["Email Tae",()=>location.href="mailto:knight.shamonte@gmail.com"],["run: whoami",()=>toast("tae@atlanta ~ full-stack engineer, trumpet player, builder")],["run: sudo hire tae",()=>toast("Permission granted. Email sent… almost 😉")]].concat(P.map(p=>["Project: "+p.n,()=>{location.hash="projects";setTimeout(()=>$(`[data-id=${p.id}]`).click(),400)}]));
+const C=[["Go to Home","#home"],["Go to About","#about"],["See the receipts","#proof"],["Go to Projects","#projects"],["Try the live demo","#demo"],["Contact me","#contact"],["How I’d fix a nonprofit site",openNP],["Replay the intro",replayIntro],["Switch to Plain English",()=>mode("plain")],["Switch to Engineer view",()=>mode("tech")],["Toggle light/dark",theme],["Open GitHub",()=>open("https://github.com/SHAMONTEK")],["Open LinkedIn",()=>open("https://www.linkedin.com/in/shamonte")],["Email Tae",()=>location.href="mailto:"+EMAIL],["run: whoami",()=>toast("tae@atlanta ~ full-stack engineer, trumpet player, builder")],["run: sudo hire tae",()=>toast("Permission granted. Email sent… almost 😉")]].concat(P.map(p=>["Project: "+p.n,()=>{location.hash="projects";setTimeout(()=>$(`[data-id=${p.id}]`).click(),400)}]));
 let sel=0,fil=C;const pal=$("#pal"),pi=$("#pi"),pl=$("#pl");
 function rp(){pl.innerHTML=fil.map((c,i)=>`<div class="${i===sel?"sel":""}" data-i="${i}">${c[0]}<span class="dim">↵</span></div>`).join("")}
-function op(){pal.classList.add("show");pi.value="";fil=C;sel=0;rp();pi.focus()}
-function cl(){pal.classList.remove("show")}
+function op(){pal.classList.add("show");$("#pk").setAttribute("aria-expanded","true");pi.value="";fil=C;sel=0;rp();pi.focus()}
+function cl(){pal.classList.remove("show");$("#pk").setAttribute("aria-expanded","false")}
 function run(i){const c=fil[i];if(!c)return;cl();typeof c[1]==="string"?location.hash=c[1]:c[1]()}
 $("#pk").onclick=op;pal.onclick=e=>{if(e.target===pal)cl();const d=e.target.closest("[data-i]");if(d)run(+d.dataset.i)};
 pi.oninput=()=>{const q=pi.value.toLowerCase();fil=C.filter(c=>c[0].toLowerCase().includes(q));sel=0;rp()};
 pi.onkeydown=e=>{if(e.key==="ArrowDown"){sel=Math.min(fil.length-1,sel+1);rp();e.preventDefault()}else if(e.key==="ArrowUp"){sel=Math.max(0,sel-1);rp();e.preventDefault()}else if(e.key==="Enter")run(sel)};
 addEventListener("keydown",e=>{if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==="k"){e.preventDefault();op()}else if(e.key==="Escape")cl();else if(e.key==="/"&&!/INPUT|TEXTAREA/.test(document.activeElement.tagName)){e.preventDefault();op()}});
+// focus trap
+function trap(e,root){if(e.key!=="Tab")return;const f=[...root.querySelectorAll('a[href],button:not([disabled]),input,textarea,[tabindex]:not([tabindex="-1"])')].filter(x=>x.offsetParent!==null);if(!f.length)return;const a=f[0],z=f[f.length-1];if(e.shiftKey&&document.activeElement===a){e.preventDefault();z.focus()}else if(!e.shiftKey&&document.activeElement===z){e.preventDefault();a.focus()}}
+addEventListener("keydown",e=>{if(npEl.classList.contains("show"))trap(e,npEl);else if(pal.classList.contains("show"))trap(e,pal)});
 chips();draw();$$('.path b').forEach(b=>b.textContent=b.textContent.replace(/^\S+\s/,''));const ST=[['Dream','I start with the person and the problem, then what it should feel like when it is right.','Problem framing, user flows and constraints before a single pixel.'],['Draw','Pen and paper first. Screens, flows and the small details that make an interface feel expensive.','Hand-drawn wireframes, then a component inventory, then design tokens.'],['Direct','I brief AI like a lead briefs a team: clear specs, taste, constraints. It builds. I review and decide.','Spec-driven prompting, architecture calls, and review of every diff.'],['Deliver','Test it on real people, fix what breaks, then ship it.','Usability feedback loops, instrumentation, iterate and release.']];function step(i){$$('#steps button').forEach(b=>b.classList.toggle('on',+b.dataset.s===i));$('#pp').innerHTML='<h3>'+ST[i][0]+'</h3><p class=pl>'+ST[i][1]+'</p><p class=t>'+ST[i][2]+'</p>'}$('#steps').onclick=e=>e.target.dataset.s&&step(+e.target.dataset.s);step(0);$('#sw').onclick=e=>{const b=e.target.closest('[data-t]');if(b)toast(b.dataset.t)};
-const nd=$('#nudge');new IntersectionObserver(es=>es.forEach(e=>nd.classList.toggle('gone',e.isIntersecting||e.boundingClientRect.top<0)),{threshold:.15}).observe($('.paths'));(function(){const c=$('#stars'),x=c.getContext('2d'),S=[],rm=matchMedia('(prefers-reduced-motion:reduce)').matches;let W,H,D,sy=0,lw=innerWidth;function size(){D=Math.min(devicePixelRatio||1,2);W=c.width=innerWidth*D;H=c.height=innerHeight*D}function mk(){S.length=0;for(let i=0;i<110;i++){const z=Math.random();S.push({x:Math.random()*W,y:Math.random()*H,z,r:(.3+z*.6)*D,vx:(Math.random()-.5)*.12*D,vy:(Math.random()-.5)*.08*D,p:Math.random()*6.28})}}function frame(t){x.clearRect(0,0,W,H);for(const s of S){if(!rm){s.x=(s.x+s.vx+W)%W;s.y=(s.y+s.vy+H)%H}const py=((s.y-sy*s.z*.3*D)%H+H)%H;x.fillStyle='rgba(229,228,226,'+(.25+.55*s.z*(.6+.4*Math.sin(t/900+s.p)))+')';x.beginPath();x.arc(s.x,py,s.r,0,6.283);x.fill()}if(!rm)requestAnimationFrame(frame)}addEventListener('resize',()=>{const w=innerWidth!==lw;lw=innerWidth;size();if(w)mk();if(rm)frame(0)});addEventListener('scroll',()=>{sy=scrollY;if(rm)frame(0)},{passive:true});size();mk();requestAnimationFrame(frame)})();</script>
+const nd=$('#nudge');new IntersectionObserver(es=>es.forEach(e=>nd.classList.toggle('gone',e.isIntersecting||e.boundingClientRect.top<0)),{threshold:.15}).observe($('.paths'));
+
+/* ===== entry gate ===== */
+const G=$('#gate'),orbs=$('#orbs');
+function makeOrbs(){if(!orbs)return;let h='';for(let i=0;i<36;i++){const a=(i/36)*360+Math.random()*6,sz=(Math.random()*2.1+1).toFixed(1),op=(.3+Math.random()*.55).toFixed(2),d=(Math.random()*2.4).toFixed(2);h+=`<i style="width:${sz}px;height:${sz}px;opacity:${op};animation-delay:-${d}s;transform:translate(-50%,-50%) rotate(${a}deg) translateY(-132px)"></i>`}orbs.innerHTML=h}
+makeOrbs();
+let gdone=false;
+function enter(c){if(gdone)return;gdone=true;const d=document.documentElement;d.dataset.theme=c;const m=$('#tc');if(m)m.content=c==='dark'?'#09090b':'#f4f2ee';try{localStorage.setItem('tk-theme',c);localStorage.setItem('tk-gate','1')}catch(e){}G.classList.add('go');setTimeout(()=>{G.classList.add('off');d.classList.remove('gated');armBanner()},RM?240:1180)}
+function replayIntro(){gdone=false;const d=document.documentElement;d.classList.remove('nogate');G.classList.remove('off','go');makeOrbs();d.classList.add('gated');scrollTo({top:0,behavior:'auto'});setTimeout(()=>{const b=$('#gate .gbtn');if(b)b.focus({preventScroll:true})},80)}
+$$('#gate .gbtn').forEach(b=>b.onclick=()=>enter(b.dataset.c));
+$('#gskip').onclick=()=>enter(document.documentElement.dataset.theme||'light');
+setTimeout(()=>{if(!gdone&&!document.documentElement.classList.contains('nogate')){const b=$('#gate .gbtn');if(b)b.focus({preventScroll:true})}},320);
+
+/* ===== nonprofit banner + panel ===== */
+const npbar=$('#npbar'),npEl=$('#np');let npTimer;
+function hideBanner(){npbar.classList.remove('in');npbar.classList.add('out');clearTimeout(npTimer);try{sessionStorage.setItem('tk-np','1')}catch(e){}}
+function armBanner(){let s=false;try{s=sessionStorage.getItem('tk-np')==='1'}catch(e){}if(s||!npbar)return;npTimer=setTimeout(()=>{npbar.classList.add('in');npTimer=setTimeout(hideBanner,8000)},1500)}
+function openNP(){npEl.classList.add('show');hideBanner();document.documentElement.classList.add('gated');setTimeout(()=>$('#npx').focus({preventScroll:true}),60)}
+function closeNP(){npEl.classList.remove('show');document.documentElement.classList.remove('gated');try{sessionStorage.setItem('tk-np','1')}catch(e){}}
+$('#npopen').onclick=openNP;$('#npclose').onclick=hideBanner;$('#npx').onclick=closeNP;$('#npx2').onclick=closeNP;
+npEl.onclick=e=>{if(e.target===npEl)closeNP()};
+addEventListener('keydown',e=>{if(e.key==='Escape'&&npEl.classList.contains('show'))closeNP()});
+if(document.documentElement.classList.contains('nogate'))armBanner();
+
+(function(){const c=$('#stars'),x=c.getContext('2d'),S=[];let W,H,D,sy=0,lw=innerWidth;function size(){D=Math.min(devicePixelRatio||1,2);W=c.width=innerWidth*D;H=c.height=innerHeight*D}function mk(){S.length=0;for(let i=0;i<110;i++){const z=Math.random();S.push({x:Math.random()*W,y:Math.random()*H,z,r:(.3+z*.6)*D,vx:(Math.random()-.5)*.12*D,vy:(Math.random()-.5)*.08*D,p:Math.random()*6.28})}}function frame(t){x.clearRect(0,0,W,H);for(const s of S){if(!RM){s.x=(s.x+s.vx+W)%W;s.y=(s.y+s.vy+H)%H}const py=((s.y-sy*s.z*.3*D)%H+H)%H;x.fillStyle='rgba(229,228,226,'+(.25+.55*s.z*(.6+.4*Math.sin(t/900+s.p)))+')';x.beginPath();x.arc(s.x,py,s.r,0,6.283);x.fill()}if(!RM)requestAnimationFrame(frame)}addEventListener('resize',()=>{const w=innerWidth!==lw;lw=innerWidth;size();if(w)mk();if(RM)frame(0)});addEventListener('scroll',()=>{sy=scrollY;if(RM)frame(0)},{passive:true});size();mk();requestAnimationFrame(frame)})();
+</script>
 </body>
 </html>
