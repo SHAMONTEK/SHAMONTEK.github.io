@@ -1,1049 +1,202 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SHAMONTE KNIGHT – Full-Stack Engineer & AI Systems Builder</title>
-    <meta name="description" content="Portfolio of Shamonte Knight — Full-Stack Engineer building AI, security systems, and scalable infrastructure. Open for 2026 apprenticeships and engineering roles.">
-    <meta name="keywords" content="ShaMonte Knight, Full-Stack Engineer, AI Systems, PhishRx, Tracks, Georgia State University, React, Python, Flask, JavaScript">
-    <meta name="author" content="SHAMONTE KNIGHT">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tae Knight – UI/UX Developer &amp; Product Architect</title>
+<meta name="description" content="Portfolio of Shamonte “Tae” Knight: full-stack engineer building AI, security and fintech products.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#09090b;--sf:#111114;--sf2:#1a1a1f;--bd:rgba(229,228,226,.1);--tx:#e5e4e2;--dim:#8d9097;--ac:#cfd2d7;--ac2:#9b9ea6;--gl:rgba(207,210,215,.07);--gold:#c9a45c;--red:#c4372a;--b1:#f4f4f5;--b2:#b4b7bd;--bt:#0a0a0b;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root[data-theme='light']{--bg:#f4f2ee;--sf:#fff;--sf2:#ebe8e2;--bd:rgba(0,0,0,.12);--tx:#141416;--dim:#5d5f66;--ac:#3a3d44;--ac2:#6b6e76;--gl:rgba(0,0,0,.05);--gold:#8f6b1f;--red:#a3271b;--b1:#2a2a2e;--b2:#141416;--bt:#f4f2ee;color-scheme:light}
 
-    <meta property="og:title" content="SHAMONTE KNIGHT – Full-Stack Engineer & AI Systems Builder">
-    <meta property="og:description" content="Full-stack projects spanning AI, security tooling, and human-centered infrastructure.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://shamontek.github.io">
-    <meta property="og:image" content="https://shamontek.github.io/og-hero.jpg">
-    <meta name="twitter:card" content="summary_large_image">
-
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- UPGRADE 1: Distinctive font pairing — Syne (bold display) + DM Sans (legible body) replacing generic Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "SHAMONTE KNIGHT",
-      "alternateName": "Tae Knight",
-      "url": "https://shamontek.github.io",
-      "email": "mailto:knight.shamonte@gmail.com",
-      "jobTitle": "Full-Stack Software Engineer",
-      "alumniOf": [
-        { "@type": "CollegeOrUniversity", "name": "Georgia State University" },
-        { "@type": "CollegeOrUniversity", "name": "Texas Southern University" }
-      ],
-      "knowsAbout": ["React", "Python", "Flask", "JavaScript", "Full-Stack Engineering", "AI/ML", "Chrome Extensions", "JavaFX", "System Design", "Feature Flags", "Experimentation Infrastructure"],
-      "address": { "@type": "PostalAddress", "addressLocality": "Atlanta", "addressRegion": "GA", "addressCountry": "USA" },
-      "sameAs": ["https://www.linkedin.com/in/shamonte/", "https://github.com/SHAMONTEK"]
-    }
-    </script>
-
-    <style>
-        /* UPGRADE 2: Refined CSS variable system with semantic naming */
-        :root {
-            --base: #080B10;
-            --surface: #0F1318;
-            --surface-2: #161C24;
-            --border: rgba(255,255,255,0.07);
-            --border-accent: rgba(0,212,180,0.4);
-            --text: #EAE9E4;
-            --text-dim: #7A8390;
-            --text-dimmer: #4A5260;
-            /* UPGRADE 3: Shifted accent from electric blue → teal-mint — matches Affirm's brand palette */
-            --accent: #00D4B4;
-            --accent-2: #0099FF;
-            --accent-warm: #F5A623;
-            --glow: rgba(0,212,180,0.12);
-        }
-        html.light {
-            --base: #F8F7F4;
-            --surface: #FFFFFF;
-            --surface-2: #F0EEE9;
-            --border: rgba(0,0,0,0.08);
-            --border-accent: rgba(0,168,140,0.35);
-            --text: #111418;
-            --text-dim: #586070;
-            --text-dimmer: #9AA4B0;
-            --accent: #00A88C;
-            --accent-2: #0077CC;
-            --accent-warm: #D4851A;
-            --glow: rgba(0,168,140,0.08);
-        }
-
-        *, *::before, *::after { box-sizing: border-box; }
-        html { scroll-behavior: smooth; }
-
-        body {
-            font-family: 'DM Sans', sans-serif;
-            background-color: var(--base);
-            color: var(--text);
-            transition: background 0.3s, color 0.3s;
-            overflow-x: hidden;
-        }
-
-        /* UPGRADE 4: Subtle dot-grid background — engineering aesthetic, not particle soup */
-        body::before {
-            content: '';
-            position: fixed; inset: 0; z-index: -1; pointer-events: none;
-            background-image: radial-gradient(circle, var(--text-dimmer) 1px, transparent 1px);
-            background-size: 28px 28px;
-            opacity: 0.18;
-        }
-
-        /* UPGRADE 5: Noise texture overlay for depth */
-        body::after {
-            content: '';
-            position: fixed; inset: 0; z-index: -1; pointer-events: none;
-            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
-            opacity: 0.5;
-        }
-
-        /* UPGRADE 6: Typography scale using Syne for all headings */
-        h1, h2, h3, h4 { font-family: 'Syne', sans-serif; }
-
-        /* UPGRADE 7: Nav gets glass morphism treatment */
-        .glass-nav {
-            background: rgba(8,11,16,0.8);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border-bottom: 1px solid var(--border);
-        }
-        html.light .glass-nav {
-            background: rgba(248,247,244,0.85);
-        }
-
-        /* UPGRADE 8: Nav link with precise underline animation */
-        .nav-link {
-            position: relative;
-            font-size: 0.8rem;
-            font-weight: 500;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            color: var(--text-dim);
-            transition: color 0.2s;
-            padding-bottom: 4px;
-        }
-        .nav-link::after {
-            content: '';
-            position: absolute; bottom: 0; left: 0;
-            width: 0; height: 1.5px;
-            background: var(--accent);
-            transition: width 0.3s ease;
-        }
-        .nav-link:hover, .nav-link.active { color: var(--text); }
-        .nav-link:hover::after, .nav-link.active::after { width: 100%; }
-
-        /* UPGRADE 9: Page section animation — faster, snappier */
-        .page-section {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-        }
-        .page-section.is-visible { opacity: 1; transform: translateY(0); }
-
-        /* UPGRADE 10: Project cards — cleaner border treatment, no harsh shadow spam */
-        .project-card {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
-            overflow: hidden;
-            cursor: pointer;
-        }
-        .project-card:hover {
-            border-color: var(--border-accent);
-            transform: translateY(-6px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.25), 0 0 0 1px var(--border-accent);
-        }
-
-        /* UPGRADE 11: Tech pill redesign — monospace font, terminal-inspired */
-        .tech-pill {
-            font-family: 'DM Mono', 'Courier New', monospace;
-            font-size: 0.68rem;
-            font-weight: 500;
-            letter-spacing: 0.04em;
-            background: var(--surface-2);
-            color: var(--accent);
-            border: 1px solid var(--border-accent);
-            border-radius: 4px;
-            padding: 3px 8px;
-        }
-
-        /* UPGRADE 12: Category badge */
-        .category-badge {
-            font-size: 0.65rem;
-            font-weight: 600;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            padding: 3px 10px;
-            border-radius: 100px;
-        }
-        .badge-engineering { background: rgba(0,153,255,0.12); color: var(--accent-2); border: 1px solid rgba(0,153,255,0.25); }
-        .badge-ui-ux { background: rgba(0,212,180,0.1); color: var(--accent); border: 1px solid var(--border-accent); }
-        .badge-creative { background: rgba(245,166,35,0.1); color: var(--accent-warm); border: 1px solid rgba(245,166,35,0.25); }
-
-        /* UPGRADE 13: Scale metric cards — engineering credibility signal */
-        .scale-card {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 1.5rem;
-            text-align: center;
-            transition: border-color 0.3s;
-        }
-        .scale-card:hover { border-color: var(--border-accent); }
-        .scale-metric { font-family: 'Syne', sans-serif; font-size: 2.5rem; font-weight: 800; color: var(--accent); line-height: 1; }
-        .scale-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-dim); margin-top: 0.5rem; }
-
-        /* UPGRADE 14: Horizontal timeline for work history */
-        .timeline-item { position: relative; padding-left: 1.5rem; }
-        .timeline-item::before {
-            content: '';
-            position: absolute; left: 0; top: 8px;
-            width: 8px; height: 8px;
-            background: var(--accent);
-            border-radius: 50%;
-        }
-        .timeline-item::after {
-            content: '';
-            position: absolute; left: 3.5px; top: 16px;
-            width: 1px; height: calc(100% + 1rem);
-            background: var(--border);
-        }
-        .timeline-item:last-child::after { display: none; }
-
-        /* UPGRADE 15: Affirm-specific CTA button */
-        .btn-primary {
-            background: var(--accent);
-            color: var(--base);
-            font-family: 'Syne', sans-serif;
-            font-size: 0.85rem;
-            font-weight: 700;
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
-            padding: 14px 32px;
-            border-radius: 8px;
-            border: none;
-            cursor: pointer;
-            transition: transform 0.2s, box-shadow 0.2s;
-            display: inline-block;
-            text-decoration: none;
-        }
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(0,212,180,0.25);
-        }
-        .btn-outline {
-            background: transparent;
-            color: var(--accent);
-            font-family: 'Syne', sans-serif;
-            font-size: 0.85rem;
-            font-weight: 700;
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
-            padding: 13px 32px;
-            border-radius: 8px;
-            border: 1.5px solid var(--border-accent);
-            cursor: pointer;
-            transition: background 0.2s, color 0.2s;
-            display: inline-block;
-            text-decoration: none;
-        }
-        .btn-outline:hover { background: var(--glow); }
-
-        /* UPGRADE 16: Modal polish */
-        .modal-backdrop { background: rgba(0,0,0,0.85); backdrop-filter: blur(8px); }
-        #modal-content-container {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 20px;
-        }
-
-        /* UPGRADE 17: Edge cards — tighter, more professional */
-        .edge-card {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 14px;
-            padding: 1.5rem;
-            transition: border-color 0.3s, transform 0.3s;
-        }
-        .edge-card:hover {
-            border-color: var(--border-accent);
-            transform: translateY(-4px);
-        }
-
-        /* UPGRADE 18: Skill bar visual */
-        .skill-bar-track {
-            height: 4px;
-            background: var(--surface-2);
-            border-radius: 2px;
-            margin-top: 6px;
-            overflow: hidden;
-        }
-        .skill-bar-fill {
-            height: 100%;
-            border-radius: 2px;
-            background: linear-gradient(90deg, var(--accent), var(--accent-2));
-            transition: width 1.2s ease;
-        }
-
-        /* UPGRADE 19: Section divider with label */
-        .section-rule {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            margin: 5rem 0 3rem;
-        }
-        .section-rule::before, .section-rule::after {
-            content: '';
-            flex: 1;
-            height: 1px;
-            background: var(--border);
-        }
-        .section-rule-label {
-            font-family: 'Syne', sans-serif;
-            font-size: 0.7rem;
-            font-weight: 700;
-            letter-spacing: 0.15em;
-            text-transform: uppercase;
-            color: var(--text-dimmer);
-        }
-
-        /* UPGRADE 20: Video container */
-        .video-responsive { overflow: hidden; position: relative; height: 0; padding-bottom: 56.25%; border-radius: 14px; }
-        .video-responsive iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-
-        /* UPGRADE 21: Hero animation — smoother, no layout shift */
-        .hero-text-h1 { opacity: 0; animation: fadeUp 0.9s cubic-bezier(0.22,1,0.36,1) 0.15s forwards; }
-        .hero-text-sub { opacity: 0; animation: fadeUp 0.9s cubic-bezier(0.22,1,0.36,1) 0.35s forwards; }
-        .hero-text-cta { opacity: 0; animation: fadeUp 0.9s cubic-bezier(0.22,1,0.36,1) 0.55s forwards; }
-        @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
-
-        /* UPGRADE 22: Scrollbar styling */
-        ::-webkit-scrollbar { width: 5px; }
-        ::-webkit-scrollbar-track { background: transparent; }
-        ::-webkit-scrollbar-thumb { background: var(--surface-2); border-radius: 3px; }
-
-        /* UPGRADE 23: Mobile menu */
-        #mobile-menu { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; margin-top: 8px; }
-
-        /* Contact form */
-        input, textarea {
-            background: var(--surface-2);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            color: var(--text);
-            padding: 12px 16px;
-            width: 100%;
-            font-family: 'DM Sans', sans-serif;
-            font-size: 0.9rem;
-            transition: border-color 0.2s;
-            outline: none;
-        }
-        input:focus, textarea:focus { border-color: var(--border-accent); }
-        input::placeholder, textarea::placeholder { color: var(--text-dimmer); }
-
-        /* Availability banner */
-        .availability-pill {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: rgba(0,212,180,0.08);
-            border: 1px solid var(--border-accent);
-            border-radius: 100px;
-            padding: 6px 16px;
-            font-size: 0.78rem;
-            font-weight: 500;
-            color: var(--accent);
-        }
-        .availability-dot {
-            width: 7px; height: 7px;
-            background: var(--accent);
-            border-radius: 50%;
-            animation: pulse 2s infinite;
-        }
-        @keyframes pulse {
-            0%, 100% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.5; transform: scale(0.8); }
-        }
-
-        /* UPGRADE 24: Now/next panel */
-        .now-next-panel {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            overflow: hidden;
-        }
-        .now-next-panel > div { padding: 2rem; }
-        .now-next-panel > div:first-child { border-bottom: 1px solid var(--border); }
-
-        /* Filter buttons */
-        .project-filter {
-            font-family: 'Syne', sans-serif;
-            font-size: 0.75rem;
-            font-weight: 700;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            padding: 8px 20px;
-            border-radius: 6px;
-            border: 1.5px solid var(--border);
-            background: transparent;
-            color: var(--text-dim);
-            cursor: pointer;
-            transition: all 0.2s;
-        }
-        .project-filter.active-filter, .project-filter:hover {
-            background: var(--glow);
-            border-color: var(--border-accent);
-            color: var(--accent);
-        }
-
-        /* UPGRADE 25: Affirm callout banner */
-        .affirm-callout {
-            background: linear-gradient(135deg, rgba(0,212,180,0.08) 0%, rgba(0,153,255,0.06) 100%);
-            border: 1px solid var(--border-accent);
-            border-radius: 14px;
-            padding: 1.5rem 2rem;
-        }
-    </style>
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;height:100%;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 72px)}
+body{margin:0;min-height:100%;background:var(--bg);color:var(--tx);font:16px/1.6 'DM Sans',system-ui,sans-serif;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:60}
+h1,h2,h3{font-family:'Syne',system-ui,sans-serif;line-height:1.1;margin:0}
+a{color:inherit}
+.w{max-width:1080px;margin:0 auto;padding:0 20px}
+section{padding:72px 0}
+.lbl{font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ac)}
+.dim{color:var(--dim)}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--bd)}
+nav{display:flex;align-items:center;gap:6px;height:60px}
+.logo{font:800 1.3rem Syne,sans-serif;color:var(--ac);text-decoration:none;margin-right:auto}
+nav a.l{font-size:.78rem;letter-spacing:.07em;text-transform:uppercase;text-decoration:none;color:var(--dim);padding:6px 10px;border-radius:6px}
+nav a.l:hover,nav a.l.on{color:var(--tx);background:var(--gl)}
+.btn{font:700 .8rem Syne,sans-serif;letter-spacing:.05em;text-transform:uppercase;padding:12px 22px;border-radius:8px;border:1.5px solid var(--ac);background:var(--ac);color:var(--bg);cursor:pointer;text-decoration:none;display:inline-block;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.o{background:transparent;color:var(--ac)}
+.ib{background:var(--sf);border:1px solid var(--bd);color:var(--tx);border-radius:8px;padding:7px 11px;font:600 .75rem 'DM Sans';cursor:pointer}
+.ib:hover{border-color:var(--ac)}
+kbd{font:600 .68rem monospace;border:1px solid var(--bd);border-radius:4px;padding:1px 5px;color:var(--dim)}
+.hero{padding-top:64px}
+.hero h1{font-size:clamp(2.6rem,9vw,5.8rem);font-weight:800;margin:14px 0}
+.hero h1 span{color:var(--ac)}
+.role{font-size:1.25rem;min-height:2em}.role b{color:var(--ac);border-right:2px solid var(--ac);padding-right:3px}
+.pill{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--ac);border-radius:99px;padding:5px 14px;font-size:.78rem;color:var(--ac);background:var(--gl)}
+.pill i{width:7px;height:7px;border-radius:50%;background:var(--ac);animation:p 2s infinite}
+@keyframes p{50%{opacity:.3}}
+.paths{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin-top:34px}
+.path{background:var(--sf);border:1px solid var(--bd);border-radius:14px;padding:18px;text-align:left;cursor:pointer;color:var(--tx);font:inherit;transition:.25s}
+.path:hover{border-color:var(--ac);transform:translateY(-4px)}
+.path b{display:block;font:700 1rem Syne;margin-bottom:4px}.path span{font-size:.85rem;color:var(--dim)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:28px}
+.stat{background:var(--sf);border:1px solid var(--bd);border-radius:12px;padding:16px;text-align:center}
+.stat b{display:block;font:800 2rem Syne;color:var(--ac)}.stat span{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--dim)}
+h2{font-size:clamp(1.9rem,5vw,3rem);font-weight:800;margin:8px 0 14px}
+.seg{display:inline-flex;background:var(--sf);border:1px solid var(--bd);border-radius:10px;padding:3px;margin:6px 0 18px}
+.seg button{border:0;background:none;color:var(--dim);font:600 .8rem 'DM Sans';padding:8px 14px;border-radius:8px;cursor:pointer}
+.seg button.on{background:var(--ac);color:var(--bg)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.chip{font:500 .74rem ui-monospace,monospace;border:1px solid var(--bd);background:var(--sf);color:var(--tx);border-radius:6px;padding:5px 10px;cursor:pointer}
+.chip:hover,.chip.on{border-color:var(--ac);color:var(--ac);background:var(--gl)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px}
+.card{background:var(--sf);border:1px solid var(--bd);border-radius:16px;padding:22px;cursor:pointer;transition:.25s}
+.card:hover{border-color:var(--ac);transform:translateY(-4px)}
+.card.dim2{opacity:.25}.card.open{grid-column:1/-1;border-color:var(--ac);cursor:default;transform:none}
+.card h3{font-size:1.2rem;margin:8px 0}.card p{margin:0 0 12px;font-size:.92rem}
+.tag{font-size:.65rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--ac2)}
+.more{display:none;border-top:1px solid var(--bd);margin-top:14px;padding-top:14px}
+.card.open .more{display:block}.card.open .hint{display:none}
+.hint{font-size:.75rem;color:var(--ac)}
+body[data-mode="plain"] .t,body[data-mode="tech"] .pl{display:none}
+.m{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:10px;margin:12px 0}
+.m div{background:var(--sf2);border-radius:10px;padding:10px;text-align:center}.m b{display:block;color:var(--ac);font:800 1.3rem Syne}.m span{font-size:.66rem;text-transform:uppercase;color:var(--dim)}
+.demo{background:var(--sf);border:1px solid var(--bd);border-radius:18px;padding:22px}
+textarea,input{width:100%;background:var(--sf2);border:1px solid var(--bd);border-radius:10px;color:var(--tx);padding:12px 14px;font:inherit;outline:none}
+textarea:focus,input:focus{border-color:var(--ac)}
+.bar{height:12px;border-radius:6px;background:var(--sf2);overflow:hidden;margin:14px 0 6px}.bar i{display:block;height:100%;width:0;transition:width .5s,background .5s}
+.flag{border-left:3px solid var(--ac-w,#e5484d);background:var(--sf2);border-radius:0 8px 8px 0;padding:8px 12px;margin:8px 0;font-size:.88rem}
+.cg{display:grid;grid-template-columns:1fr 1fr;gap:14px}@media(max-width:640px){.cg{grid-template-columns:1fr}nav a.l{display:none}}
+.rv{opacity:0;transform:translateY(24px);transition:.7s}.rv.in{opacity:1;transform:none}
+#pal{position:fixed;inset:0;z-index:100;background:rgba(0,0,0,.6);backdrop-filter:blur(6px);display:none;align-items:flex-start;justify-content:center;padding:14vh 16px 0}
+#pal.show{display:flex}
+#pb{width:100%;max-width:520px;background:var(--sf);border:1px solid var(--bd);border-radius:14px;overflow:hidden}
+#pb input{border:0;border-radius:0;border-bottom:1px solid var(--bd);padding:16px}
+#pl div{padding:11px 16px;cursor:pointer;font-size:.92rem;display:flex;justify-content:space-between}
+#pl div.sel{background:var(--gl);color:var(--ac)}
+#toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,30px);background:var(--ac);color:var(--bg);padding:10px 18px;border-radius:99px;font-weight:600;font-size:.85rem;opacity:0;transition:.3s;z-index:120;pointer-events:none;max-width:90vw;text-align:center}
+#toast.show{opacity:1;transform:translate(-50%,0)}
+footer{border-top:1px solid var(--bd);padding:36px 0;text-align:center;font-size:.85rem}::selection{background:var(--red);color:#fff}body{background:radial-gradient(900px 520px at 82% -6%,rgba(207,210,215,.07),transparent 70%),radial-gradient(620px 420px at -4% 38%,rgba(196,55,42,.06),transparent 70%),var(--bg);background-repeat:no-repeat}:root[data-theme='light'] body{background:var(--bg)}h1,h2,h3,.logo,.stat b,.m b,.path b{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600}.logo{font-size:1.7rem;letter-spacing:.2em}.hero h1{font-weight:600;letter-spacing:.05em;line-height:.95}.hero h1 span{background:linear-gradient(180deg,#fff,#c9ccd1 45%,#6f737b);-webkit-background-clip:text;background-clip:text;color:transparent}:root[data-theme='light'] .hero h1 span{background:linear-gradient(180deg,#3a3d44,#141416);-webkit-background-clip:text;background-clip:text}h2{font-size:clamp(2.3rem,6vw,3.7rem)}.card h3{font-size:1.7rem}.stat b{font-size:2.8rem}.m b{font-size:1.8rem}.path b{font-size:1.4rem}.pp h3{font-size:1.8rem;margin-bottom:6px}.btn{font-family:'DM Sans',sans-serif;font-weight:600;letter-spacing:.14em;background:linear-gradient(180deg,var(--b1),var(--b2));color:var(--bt);border-color:var(--b2)}.btn.o{background:transparent;color:var(--tx);border-color:var(--dim)}.btn.o:hover{border-color:var(--tx)}.lbl::before{content:'';display:inline-block;width:24px;height:1px;background:var(--red);margin-right:10px;vertical-align:middle}.pill{margin:0 6px 8px 0}.pill.gold{border-color:var(--gold);background:rgba(201,164,92,.08)}.pill.live{border-color:var(--bd);color:var(--tx);background:var(--sf)}.pill i{background:var(--red);box-shadow:0 0 10px var(--red)}.role b{border-right-color:var(--red)}.gold{color:var(--gold)!important}.card.fl{box-shadow:inset 0 1px 0 var(--gold)}.flag{border-left-color:var(--red)}input,textarea{caret-color:var(--red)}section+section{border-top:1px solid var(--bd)}.pp{max-width:640px;border:1px solid var(--bd);background:var(--sf);border-radius:14px;padding:18px 22px}.pp p{margin:0}.sw{display:flex;gap:12px}.sw button{width:48px;height:48px;border-radius:50%;border:1px solid var(--dim);cursor:pointer;transition:transform .2s}.sw button:hover{transform:scale(1.12)}#stars{position:fixed;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none}:root[data-theme='light'] #stars{display:none}.hh{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center}.ph{position:relative;margin:0;width:min(300px,32vw);aspect-ratio:4/5;border-radius:999px 999px 20px 20px;overflow:hidden;border:1px solid var(--dim);background:radial-gradient(circle at 50% 30%,var(--sf2),var(--sf));display:grid;place-items:center;box-shadow:0 30px 80px rgba(0,0,0,.5)}.ph span{font:600 7rem 'Cormorant Garamond',Georgia,serif;color:var(--dim);opacity:.5}.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.ph::after{content:'';position:absolute;inset:0;box-shadow:inset 0 0 60px rgba(0,0,0,.4);pointer-events:none}.start{display:flex;flex-direction:column;align-items:center;text-align:center;margin-top:56px}.sh{font-size:clamp(1.8rem,5vw,3rem);margin:6px 0 10px;max-width:560px}.bigarrow{width:72px;height:140px;flex:none;color:var(--red);filter:drop-shadow(0 0 14px rgba(196,55,42,.55));animation:bob 1.6s ease-in-out infinite}@keyframes bob{50%{transform:translateY(14px)}}.paths{margin-top:8px}#nudge{position:fixed;left:0;right:0;margin:0 auto;width:max-content;bottom:calc(22px + env(safe-area-inset-bottom,0px));z-index:55;display:flex;align-items:center;gap:10px;background:var(--red);color:#fff;font:600 .78rem 'DM Sans',sans-serif;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:12px 20px;border-radius:99px;box-shadow:0 10px 40px rgba(196,55,42,.45);animation:bob 1.6s ease-in-out infinite;transition:opacity .3s}#nudge.gone{opacity:0;pointer-events:none}.hl{box-shadow:0 0 0 1px var(--ac),0 0 50px rgba(207,210,215,.2)!important;border-color:var(--ac)!important;transition:.4s}@media(max-width:760px){.hh{grid-template-columns:1fr}.ph{width:210px;order:-1}.bigarrow{width:52px;height:100px}}@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+</style>
 </head>
-<body>
+<body data-mode="plain"><canvas id='stars' aria-hidden='true'></canvas>
+<header><div class="w"><nav>
+<a class='logo' href='#home'>TAE<span style='color:var(--gold)'>.</span></a>
+<a class="l" href="#about">About</a><a class="l" href="#projects">Projects</a><a class="l" href="#demo">Live Demo</a><a class="l" href="#contact">Contact</a>
+<button class="ib" id="pk" title="Open command menu">Menu <kbd>Ctrl K</kbd></button>
+<button class="ib" id="th" title="Toggle light/dark">◐</button>
+</nav></div></header>
 
-<!-- HEADER -->
-<header class="glass-nav sticky top-0 z-40 w-full">
-    <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between h-16">
-            <a href="#home" data-navlink="home" class="font-bold text-xl" style="font-family:'Syne',sans-serif; color:var(--accent); letter-spacing:0.02em;">
-                TK<span style="color:var(--text-dimmer)">.</span>
-            </a>
-
-            <div class="hidden md:flex items-center space-x-8">
-                <a href="#home" data-navlink="home" class="nav-link active">Home</a>
-                <a href="#about" data-navlink="about" class="nav-link">About</a>
-                <a href="#projects" data-navlink="projects" class="nav-link">Projects</a>
-                <a href="#resume" data-navlink="resume" class="nav-link">Resume</a>
-                <a href="#contact" data-navlink="contact" class="nav-link">Contact</a>
-            </div>
-
-            <div class="flex items-center space-x-4">
-                <!-- Availability indicator in nav -->
-                <span class="hidden md:flex availability-pill">
-                    <span class="availability-dot"></span>
-                    Open to Apprenticeships
-                </span>
-                <a href="https://github.com/SHAMONTEK" target="_blank" rel="noopener noreferrer" style="color:var(--text-dim)" class="hover:text-accent transition-colors" title="GitHub">
-                    <i data-lucide="github" class="w-4 h-4"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/shamonte" target="_blank" rel="noopener noreferrer" style="color:var(--text-dim)" class="hover:text-accent transition-colors" title="LinkedIn">
-                    <i data-lucide="linkedin" class="w-4 h-4"></i>
-                </a>
-                <button id="theme-toggle" style="color:var(--text-dim)" class="hover:text-accent transition-colors" title="Toggle Theme">
-                    <i data-lucide="sun" class="w-4 h-4 hidden" id="theme-icon-light"></i>
-                    <i data-lucide="moon" class="w-4 h-4" id="theme-icon-dark"></i>
-                </button>
-                <button id="mobile-menu-button" class="md:hidden" style="color:var(--text-dim)">
-                    <i data-lucide="menu" class="w-5 h-5"></i>
-                </button>
-            </div>
-        </div>
-        <div id="mobile-menu" class="md:hidden hidden space-y-1 px-2 pt-2 pb-3">
-            <a href="#home" data-navlink="home" class="nav-link block px-3 py-2">Home</a>
-            <a href="#about" data-navlink="about" class="nav-link block px-3 py-2">About</a>
-            <a href="#projects" data-navlink="projects" class="nav-link block px-3 py-2">Projects</a>
-            <a href="#resume" data-navlink="resume" class="nav-link block px-3 py-2">Resume</a>
-            <a href="#contact" data-navlink="contact" class="nav-link block px-3 py-2">Contact</a>
-        </div>
-    </nav>
-</header>
-
-<main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
-
-    <!-- HOME HERO -->
-    <section id="home" class="page-section">
-
-        <!-- Affirm-targeted callout -->
-        <div class="affirm-callout mb-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-            <div>
-                <p class="text-xs font-semibold uppercase tracking-widest mb-1" style="color:var(--accent)">Currently Targeting</p>
-                <p class="text-lg font-bold" style="font-family:'Syne',sans-serif;">Software Engineering Apprentice — Full-Stack</p>
-                <p style="color:var(--text-dim); font-size:0.85rem;">Building production-grade, scalable infrastructure with real users in mind.</p>
-            </div>
-            <a href="#contact" data-navlink="contact" class="btn-primary whitespace-nowrap">Let's Talk</a>
-        </div>
-
-        <!-- Hero area -->
-        <div class="relative rounded-2xl overflow-hidden" style="height:60vh; background:var(--surface); border:1px solid var(--border);">
-            <img src="/assets/hero/hero-1.jpg" alt="Shamonte Knight, Full-Stack Engineer" class="w-full h-full object-cover"
-                onerror="this.style.display='none'">
-            <div class="absolute inset-0" style="background:linear-gradient(to bottom, rgba(8,11,16,0.2), rgba(8,11,16,0.85))"></div>
-            <div class="absolute inset-0 flex flex-col justify-end p-8 md:p-14">
-                <p class="hero-text-sub mb-3 text-xs font-semibold uppercase tracking-widest" style="color:var(--accent)">Full-Stack Engineer · AI Systems Builder · Atlanta, GA</p>
-                <h1 class="hero-text-h1 text-4xl md:text-7xl font-extrabold text-white leading-none mb-4">SHAMONTE<br>KNIGHT</h1>
-                <div class="hero-text-cta flex flex-wrap gap-3">
-                    <a href="#projects" data-navlink="projects" class="btn-primary">View Projects</a>
-                    <a href="/ShaMonteKnight Resume.pdf" target="_blank" class="btn-outline">Download Resume</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Scale metrics — Affirm cares about scale; show you think that way -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
-            <div class="scale-card">
-                <div class="scale-metric">5+</div>
-                <div class="scale-label">Shipped Projects</div>
-            </div>
-            <div class="scale-card">
-                <div class="scale-metric">98%</div>
-                <div class="scale-label">Threat Detection Rate</div>
-            </div>
-            <div class="scale-card">
-                <div class="scale-metric">3+</div>
-                <div class="scale-label">Languages / Stacks</div>
-            </div>
-            <div class="scale-card">
-                <div class="scale-metric">2026</div>
-                <div class="scale-label">Available Now</div>
-            </div>
-        </div>
-
-        <div class="mt-10 text-center">
-            <h2 class="text-3xl md:text-4xl font-extrabold mb-4">
-                I ship code that <span style="color:var(--accent)">scales.</span>
-            </h2>
-            <p class="text-lg max-w-2xl mx-auto" style="color:var(--text-dim); line-height:1.75">
-                Full-stack engineer with a product mindset. I build systems from the database to the UI — and I monitor everything I deploy. Every project here is production-intentional, not a throwaway.
-            </p>
-            <div class="mt-8" style="color:var(--accent)">
-                <i data-lucide="arrow-down" class="w-6 h-6 mx-auto animate-bounce"></i>
-            </div>
-        </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="page-section hidden">
-        <div class="text-center mb-14">
-            <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Engineer. Builder. Advocate.</h2>
-            <p class="text-xl max-w-2xl mx-auto" style="color:var(--text-dim)">I blend full-stack engineering with product psychology to ship software that works at scale and feels human.</p>
-        </div>
-
-        <div class="section-rule"><span class="section-rule-label">My Edge</span></div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mb-16">
-            <div class="edge-card">
-                <i data-lucide="layers" class="w-8 h-8 mb-4" style="color:var(--accent)"></i>
-                <h4 class="text-lg font-bold mb-2">Full-Stack Depth</h4>
-                <p style="color:var(--text-dim); font-size:0.9rem; line-height:1.6">React frontends, Flask/Python APIs, Chrome Extensions — I own the entire stack on every project I touch.</p>
-            </div>
-            <div class="edge-card">
-                <i data-lucide="git-merge" class="w-8 h-8 mb-4" style="color:var(--accent)"></i>
-                <h4 class="text-lg font-bold mb-2">Systems Thinking</h4>
-                <p style="color:var(--text-dim); font-size:0.9rem; line-height:1.6">From AI phishing pipelines (PhishRx) to behavioral reading infrastructure (Tracks) — I design for resilience, not just features.</p>
-            </div>
-            <div class="edge-card">
-                <i data-lucide="users" class="w-8 h-8 mb-4" style="color:var(--accent)"></i>
-                <h4 class="text-lg font-bold mb-2">Collaborative Builder</h4>
-                <p style="color:var(--text-dim); font-size:0.9rem; line-height:1.6">Led multi-person capstone teams, wrote docs, managed risk trade-offs and shipped on deadline. I surface blockers early.</p>
-            </div>
-            <div class="edge-card">
-                <i data-lucide="shield-check" class="w-8 h-8 mb-4" style="color:var(--accent)"></i>
-                <h4 class="text-lg font-bold mb-2">Speed + Quality</h4>
-                <p style="color:var(--text-dim); font-size:0.9rem; line-height:1.6">I don't just ship fast — I instrument, monitor, and iterate. 120ms latency on PhishRx isn't an accident.</p>
-            </div>
-        </div>
-
-        <div class="section-rule"><span class="section-rule-label">From Foster to Future</span></div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-16">
-            <div class="video-responsive shadow-lg">
-                <iframe src="https://www.youtube.com/embed/HOvopfXhw04?si=6Ott1Ijl7obMqP0q" title="Shamonte Knight Wellroot Story" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-            <div>
-                <h4 class="text-2xl font-bold mb-4" style="color:var(--accent)">Trials to Triumph</h4>
-                <p class="mb-4" style="color:var(--text-dim); line-height:1.8">My path through the foster care system built something no curriculum can teach — acute pattern recognition, adaptive problem solving, and the relentless drive to build systems that protect and empower people.</p>
-                <p class="mb-6" style="color:var(--text-dim); line-height:1.8">That background is why I care about building at scale: the tools we ship reach real people. Especially the ones who can't afford a bug.</p>
-                <div class="flex flex-wrap gap-3">
-                    <a href="https://www.wellroot.org/trials-to-triumph-shamonte-knights-journey-to-adulthood/" target="_blank" rel="noopener noreferrer" class="btn-outline">Read My Story</a>
-                    <a href="https://www.youtube.com/watch?v=HOvopfXhw04" target="_blank" rel="noopener noreferrer" class="btn-primary">Watch on YouTube</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="now-next-panel">
-            <div>
-                <p class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:var(--accent)">Now</p>
-                <p class="text-xl font-bold">Senior at Georgia State, shipping SharkFin (Kotlin + Firebase fintech app) and scaling PhishRx's AI detection pipeline.</p>
-            </div>
-            <div>
-                <p class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:var(--text-dim)">Next</p>
-                <p class="text-xl font-bold" style="color:var(--text-dim)">Seeking a full-stack apprenticeship where I can build, deploy, monitor, and grow with a real engineering team.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="page-section hidden">
-        <div class="text-center mb-14">
-            <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Projects</h2>
-            <p class="text-xl" style="color:var(--text-dim)">Every project here is production-intentional — built to ship, monitored, and evolved.</p>
-        </div>
-
-        <div class="flex flex-wrap justify-center gap-3 mb-10">
-            <button data-filter="all" class="project-filter active-filter">All</button>
-            <button data-filter="Engineering" class="project-filter">Engineering</button>
-            <button data-filter="UI/UX" class="project-filter">UI/UX</button>
-        </div>
-
-        <div id="project-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
-    </section>
-
-    <!-- RESUME -->
-    <section id="resume" class="page-section hidden">
-        <div class="text-center mb-14">
-            <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Resume & Skills</h2>
-            <p class="text-xl" style="color:var(--text-dim)">The stack I ship in. Built over 4 years of real projects.</p>
-        </div>
-
-        <!-- Tech skills with visual bars -->
-        <div class="section-rule"><span class="section-rule-label">Technical Stack</span></div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-            <div style="background:var(--surface); border:1px solid var(--border); border-radius:16px; padding:2rem;">
-                <h3 class="text-xl font-bold mb-6" style="color:var(--accent)">Languages & Frameworks</h3>
-                <div class="space-y-4">
-                    <div>
-                        <div class="flex justify-between text-sm mb-1">
-                            <span class="font-medium">JavaScript / React</span>
-                            <span style="color:var(--text-dim)">Advanced</span>
-                        </div>
-                        <div class="skill-bar-track"><div class="skill-bar-fill" style="width:88%"></div></div>
-                    </div>
-                    <div>
-                        <div class="flex justify-between text-sm mb-1">
-                            <span class="font-medium">Python / Flask</span>
-                            <span style="color:var(--text-dim)">Advanced</span>
-                        </div>
-                        <div class="skill-bar-track"><div class="skill-bar-fill" style="width:85%"></div></div>
-                    </div>
-                    <div>
-                        <div class="flex justify-between text-sm mb-1">
-                            <span class="font-medium">Java / JavaFX</span>
-                            <span style="color:var(--text-dim)">Proficient</span>
-                        </div>
-                        <div class="skill-bar-track"><div class="skill-bar-fill" style="width:75%"></div></div>
-                    </div>
-                    <div>
-                        <div class="flex justify-between text-sm mb-1">
-                            <span class="font-medium">Kotlin / Jetpack Compose</span>
-                            <span style="color:var(--text-dim)">Proficient</span>
-                        </div>
-                        <div class="skill-bar-track"><div class="skill-bar-fill" style="width:72%"></div></div>
-                    </div>
-                    <div>
-                        <div class="flex justify-between text-sm mb-1">
-                            <span class="font-medium">Node.js / Express</span>
-                            <span style="color:var(--text-dim)">Proficient</span>
-                        </div>
-                        <div class="skill-bar-track"><div class="skill-bar-fill" style="width:70%"></div></div>
-                    </div>
-                </div>
-            </div>
-
-            <div style="background:var(--surface); border:1px solid var(--border); border-radius:16px; padding:2rem;">
-                <h3 class="text-xl font-bold mb-6" style="color:var(--accent)">Infrastructure & Tools</h3>
-                <div class="space-y-4">
-                    <div>
-                        <div class="flex justify-between text-sm mb-1">
-                            <span class="font-medium">Git / GitHub</span>
-                            <span style="color:var(--text-dim)">Daily</span>
-                        </div>
-                        <div class="skill-bar-track"><div class="skill-bar-fill" style="width:90%"></div></div>
-                    </div>
-                    <div>
-                        <div class="flex justify-between text-sm mb-1">
-                            <span class="font-medium">Chrome Extension APIs</span>
-                            <span style="color:var(--text-dim)">Production</span>
-                        </div>
-                        <div class="skill-bar-track"><div class="skill-bar-fill" style="width:82%"></div></div>
-                    </div>
-                    <div>
-                        <div class="flex justify-between text-sm mb-1">
-                            <span class="font-medium">Firebase / Real-time DBs</span>
-                            <span style="color:var(--text-dim)">Proficient</span>
-                        </div>
-                        <div class="skill-bar-track"><div class="skill-bar-fill" style="width:75%"></div></div>
-                    </div>
-                    <div>
-                        <div class="flex justify-between text-sm mb-1">
-                            <span class="font-medium">AI/ML Integration</span>
-                            <span style="color:var(--text-dim)">Applied</span>
-                        </div>
-                        <div class="skill-bar-track"><div class="skill-bar-fill" style="width:78%"></div></div>
-                    </div>
-                    <div>
-                        <div class="flex justify-between text-sm mb-1">
-                            <span class="font-medium">Tailwind / CSS Systems</span>
-                            <span style="color:var(--text-dim)">Advanced</span>
-                        </div>
-                        <div class="skill-bar-track"><div class="skill-bar-fill" style="width:87%"></div></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="section-rule"><span class="section-rule-label">Education & Achievements</span></div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-            <div style="background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:1.75rem;">
-                <h4 class="text-lg font-bold mb-1" style="color:var(--accent)">Georgia State University</h4>
-                <p class="font-semibold mb-1">B.S. Computer Science</p>
-                <p style="color:var(--text-dim); font-size:0.85rem;">AI & UX Emphasis · Expected 2026</p>
-                <a href="https://meritpages.com/SHAMONTE" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 mt-3 text-sm hover:text-accent transition-colors" style="color:var(--text-dim)">
-                    <i data-lucide="award" class="w-4 h-4"></i> Merit Page
-                </a>
-            </div>
-            <div style="background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:1.75rem;">
-                <h4 class="text-lg font-bold mb-1" style="color:var(--accent)">Texas Southern University</h4>
-                <p class="font-semibold mb-1">Ocean of Soul Marching Band</p>
-                <p style="color:var(--text-dim); font-size:0.85rem;">Dance Routine Committee · Leadership</p>
-            </div>
-            <div style="background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:1.75rem;">
-                <h4 class="text-lg font-bold mb-1" style="color:var(--accent)">Central Fine Arts IB</h4>
-                <p class="font-semibold mb-1">Audition-Based Magnet School</p>
-                <p style="color:var(--text-dim); font-size:0.85rem;">Drum Major · Mr. Senior · First Chair Trumpet</p>
-            </div>
-        </div>
-
-        <div class="section-rule"><span class="section-rule-label">Downloads</span></div>
-
-        <div style="background:var(--surface); border:1px solid var(--border); border-radius:16px; padding:2rem;" class="flex flex-col md:flex-row items-center justify-between gap-6">
-            <div>
-                <h3 class="text-2xl font-bold mb-1">Get the full picture.</h3>
-                <p style="color:var(--text-dim)">Resume, LinkedIn, and GitHub — all in one place.</p>
-            </div>
-            <div class="flex flex-wrap gap-3">
-                <a href="/ShaMonteKnight Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-primary">Download Resume</a>
-                <a href="https://www.linkedin.com/in/shamonte" target="_blank" class="btn-outline">LinkedIn</a>
-                <a href="https://github.com/SHAMONTEK" target="_blank" class="btn-outline">GitHub</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="page-section hidden">
-        <div class="text-center mb-14">
-            <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Let's Build Something Real.</h2>
-            <p class="text-xl max-w-2xl mx-auto" style="color:var(--text-dim)">I'm available for full-stack apprenticeships, engineering collaborations, and product conversations.</p>
-        </div>
-
-        <div class="max-w-lg mx-auto" style="background:var(--surface); border:1px solid var(--border); border-radius:20px; padding:2.5rem;">
-            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-5">
-                <div>
-                    <label for="name" class="block text-sm font-medium mb-2" style="color:var(--text-dim)">Name</label>
-                    <input type="text" name="name" id="name" placeholder="Your Name" required>
-                </div>
-                <div>
-                    <label for="email" class="block text-sm font-medium mb-2" style="color:var(--text-dim)">Email</label>
-                    <input type="email" name="email" id="email" placeholder="your.email@example.com" required>
-                </div>
-                <div>
-                    <label for="message" class="block text-sm font-medium mb-2" style="color:var(--text-dim)">Message</label>
-                    <textarea name="message" id="message" rows="5" placeholder="What are you building?" required></textarea>
-                </div>
-                <button type="submit" class="btn-primary w-full text-center">Send Message</button>
-            </form>
-            <p class="text-center mt-6 text-sm" style="color:var(--text-dim)">Or email me directly: <a href="mailto:knight.shamonte@gmail.com" style="color:var(--accent)" class="hover:underline">knight.shamonte@gmail.com</a></p>
-        </div>
-    </section>
-</main>
-
-<!-- FOOTER -->
-<footer style="border-top:1px solid var(--border); margin-top:5rem; padding:3rem 0;">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <p class="font-bold text-2xl mb-4" style="font-family:'Syne',sans-serif; color:var(--accent)">TK.</p>
-        <div class="flex justify-center space-x-5 mb-6">
-            <a href="https://github.com/SHAMONTEK" target="_blank" rel="noopener noreferrer" style="color:var(--text-dim)" class="hover:text-accent transition-colors" title="GitHub"><i data-lucide="github" class="w-5 h-5"></i></a>
-            <a href="https://www.linkedin.com/in/shamonte" target="_blank" rel="noopener noreferrer" style="color:var(--text-dim)" class="hover:text-accent transition-colors" title="LinkedIn"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
-            <a href="mailto:knight.shamonte@gmail.com" style="color:var(--text-dim)" class="hover:text-accent transition-colors" title="Email"><i data-lucide="mail" class="w-5 h-5"></i></a>
-            <a href="https://www.wattpad.com/user/TaeKnight" target="_blank" rel="noopener noreferrer" style="color:var(--text-dim)" class="hover:text-accent transition-colors" title="Wattpad"><i data-lucide="book-open" class="w-5 h-5"></i></a>
-        </div>
-        <p style="color:var(--text-dimmer); font-size:0.85rem;">&copy; <span id="current-year"></span> Shamonte Knight. Built to ship, not to impress.</p>
-    </div>
-</footer>
-
-<!-- PROJECT MODAL -->
-<div id="project-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 hidden">
-    <div id="modal-backdrop" class="modal-backdrop fixed inset-0"></div>
-    <div id="modal-content-container" class="relative z-10 w-full max-w-4xl max-h-[90vh] overflow-y-auto">
-        <button id="modal-close" class="absolute top-4 right-4 z-20 transition-colors" style="color:var(--text-dim)">
-            <i data-lucide="x" class="w-7 h-7"></i>
-        </button>
-        <div id="modal-dynamic-content" class="p-8 md:p-12"></div>
-    </div>
+<main class="w">
+<section id="home" class="hero">
+<div class='hh'><div><p class='lbl'>Portfolio · 2026</p><span class='pill gold'>★ B.S. Computer Science · Georgia State ’26</span> <span class='pill live'><i></i>Now: Relationship Banker, Bank of America</span>
+<h1>SHAMONTE<br><span>KNIGHT</span></h1>
+<div class='role'>I design &amp; build <b id='ty'></b></div>
+<p class='dim' style='max-width:620px'>Everyone calls me Tae. UI/UX developer and product architect out of Atlanta. I sketch it by hand, direct AI to build it, and ship it. Building by night, banking by day.</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:18px">
+<a class="btn" href="#projects">See my work</a><a class="btn o" href="#contact">Hire me</a><a class="btn o" href="ShaMonteKnight%20Resume.pdf" target="_blank" rel="noopener">Resume</a></div></div><figure class='ph'><span>T</span><img src='tae.jpg' alt='Shamonte “Tae” Knight' onerror='this.remove()'></figure></div>
+<div id='paths' class='start'><p class='lbl'>Start here</p><h2 class='sh'>Pick one. I’ll take you to what you need.</h2><svg class='bigarrow' viewBox='0 0 60 120' aria-hidden='true'><path d='M30 4v100M6 80l24 28 24-28' fill='none' stroke='currentColor' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/></svg></div>
+<div class="paths">
+<button class="path" data-go="projects" data-mode="plain"><b>👋 I’m new to tech</b><span>Plain-English tour of what I built and why it matters.</span></button>
+<button class="path" data-go="contact" data-mode="plain"><b>🔎 I’m hiring</b><span>Resume, contact and the short version. Two clicks.</span></button>
+<button class="path" data-go="projects" data-mode="tech"><b>⚙️ I’m an engineer</b><span>Architecture, stacks and internals. Press Ctrl K anytime.</span></button>
 </div>
+<div class="stats"><div class="stat"><b data-n="5">0</b><span>Projects built</span></div><div class="stat"><b data-n="4">0</b><span>Stacks used</span></div><div class='stat'><b class='gold' data-n='2026'>0</b><span>B.S. Computer Science</span></div><div class='stat'><b>BofA</b><span>Day job, right now</span></div></div>
+</section>
+
+<section id="about" class="rv">
+<p class="lbl">About</p><h2>I dream it. I draw it. I direct it.</h2>
+<p class="dim" style="max-width:720px">I want to be a UI/UX developer. I love how great apps look, and I’m studying what product management really takes. My process: I sketch the idea by hand, direct AI to build it, and stay the architect who decides what ships. I earned my B.S. in Computer Science from Georgia State in 2026. I work the floor at Bank of America, so I see how real people handle money up close. Before that: foster care in Georgia, first-chair trumpet and choreography on a full marching-band scholarship. It all taught me discipline under pressure.</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:16px">
+<a class="btn o" target="_blank" rel="noopener" href="https://www.wellroot.org/trials-to-triumph-shamonte-knights-journey-to-adulthood/">Read my story</a>
+<a class="btn o" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=HOvopfXhw04">Watch the video</a></div><p class='lbl' style='margin-top:44px'>How I build</p><div class='seg' id='steps'><button class='on' data-s='0'>01 Dream</button><button data-s='1'>02 Draw</button><button data-s='2'>03 Direct</button><button data-s='3'>04 Deliver</button></div><div class='pp' id='pp'></div><p class='lbl' style='margin-top:36px'>Range</p><div class='chips'><span class='chip'>UI/UX design</span><span class='chip'>Product thinking</span><span class='chip'>Full-stack</span><span class='chip'>AI orchestration</span><span class='chip'>Fintech</span><span class='chip'>Music &amp; choreography</span><span class='chip'>Banking</span></div><p class='lbl' style='margin-top:36px'>My palette: tap a swatch</p><div class='sw' id='sw'><button aria-label='Obsidian' style='background:#09090b' data-t='Obsidian: the canvas. Space is the luxury.'></button><button aria-label='Platinum' style='background:#cfd2d7' data-t='Platinum: what matters. Focus goes here.'></button><button aria-label='Crimson' style='background:#c4372a' data-t='Crimson: what is live or at risk.'></button><button aria-label='Gold' style='background:#c9a45c' data-t='Gold: only what is earned. Degree, flagship, signature.'></button></div>
+</section>
+
+<section id="projects" class="rv">
+<p class="lbl">Projects</p><h2>Things I’ve shipped</h2>
+<div class="seg" id="seg"><button data-m="plain" class="on">Plain English</button><button data-m="tech">Engineer view</button></div>
+<p class="dim" style="margin:0 0 10px;font-size:.85rem">Tap a skill to light up every project that uses it. Tap a card to open it.</p>
+<div class="chips" id="chips"></div>
+<div class="grid" id="grid"></div>
+</section>
+
+<section id="demo" class="rv">
+<p class="lbl">Live demo</p><h2>Would you fall for this?</h2>
+<p class="dim" style="max-width:640px">A simplified, in-browser version of the idea behind PhishRx. Paste a suspicious message or tap an example. (Rule-based demo only; the real project uses an AI pipeline.)</p>
+<div class="demo">
+<div class="chips"><button class="chip" data-ex="0">Fake bank alert</button><button class="chip" data-ex="1">Gift card scam</button><button class="chip" data-ex="2">Normal message</button></div>
+<textarea id="msg" rows="4" placeholder="Paste a text or email here…"></textarea>
+<div class="bar"><i id="fill"></i></div>
+<b id="verdict">Waiting for a message…</b>
+<div id="flags"></div>
+</div>
+</section>
+
+<section id="contact" class="rv">
+<p class="lbl">Contact</p><h2>Let’s build something real.</h2>
+<div class="demo" style="max-width:560px">
+<div class="cg"><input id="cn" placeholder="Your name"><input id="ce" type="email" placeholder="Your email"></div>
+<textarea id="cm" rows="4" placeholder="What are you building?" style="margin-top:14px"></textarea>
+<div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:14px"><button class="btn" id="send">Send via email app</button><a class='btn o' href='ShaMonteKnight%20Resume.pdf' target='_blank' rel='noopener'>Resume</a><a class="btn o" target="_blank" rel="noopener" href="https://www.linkedin.com/in/shamonte">LinkedIn</a><a class="btn o" target="_blank" rel="noopener" href="https://github.com/SHAMONTEK">GitHub</a></div>
+</div>
+</section>
+</main>
+<footer><div class="w dim">© <span id='yr'></span> Shamonte “Tae” Knight · knight.shamonte@gmail.com · Press <kbd>Ctrl K</kbd> or <kbd>/</kbd> to jump anywhere<br>Design note: gold marks what’s earned, red marks what’s live.</div></footer>
+
+<div id="pal"><div id="pb"><input id="pi" placeholder="Type a command or project…" autocomplete="off"><div id="pl"></div></div></div>
+<div id="toast"></div><a id='nudge' href='#paths'><span>Pick your path</span><svg viewBox='0 0 24 24' width='22' height='22' aria-hidden='true'><path d='M12 4v15M5 13l7 7 7-7' fill='none' stroke='currentColor' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/></svg></a>
 
 <script>
-const projectsData = [
-    {
-        id: "phishrx",
-        title: "PhishRx / PHISH-ER",
-        tagline: "Real-time AI scam defense system — Chrome Extension + Flask API.",
-        category: "Engineering",
-        image: "/assets/projects/phishrx/hero.jpg",
-        fact: "AI-powered phishing detection at 120ms latency — protecting vulnerable populations in real time.",
-        tech: ["JavaScript", "Chrome API", "Python", "Flask", "AI/ML", "OCR"],
-        role: "Lead Developer & UI/UX Designer",
-        date: "2024",
-        problem: "Phishing attacks are increasingly sophisticated, targeting vulnerable populations. Existing tools are too slow or too technical for everyday users.",
-        description: "PHISH-ER is a full-stack scam defense system — Chrome Extension frontend, Flask API backend, AI/ML threat detection pipeline, and OCR scanning for image-based phishing. Built for real users, not demos.",
-        links: { live: null, github: "https://github.com/SHAMONTEK/PHISH-ER" },
-        screenshots: ["/assets/projects/phishrx/hero.jpg"],
-        demo: "https://youtu.be/BoHVtR2Gypg?si=r04xxxvmBio6-EuU",
-        impact: { "Threat Detection": "98%", "API Latency": "120ms", "Scale": "Real Users" },
-        readmeUrl: "https://github.com/SHAMONTEK/PHISH-ER#readme",
-        howToRun: "Clone repo → npm install → npm run dev\nChrome: load unpacked at chrome://extensions/\nAPI: pip install -r requirements.txt → flask run",
-        license: "MIT"
-    },
-    {
-        id: "ems-javafx",
-        title: "Employee Management System",
-        tagline: "JavaFX desktop app with fluid UI animations and full CRUD operations.",
-        category: "Engineering",
-        image: "/assets/projects/ems/hero.jpg",
-        fact: "60fps animated transitions in JavaFX — enterprise desktop software doesn't have to feel like 2003.",
-        tech: ["Java", "JavaFX", "CSS", "OOP"],
-        role: "Solo Developer",
-        date: "2023",
-        problem: "Enterprise desktop apps prioritize function over experience. Clunky UIs reduce productivity and adoption.",
-        description: "Full-scale Employee Management System in JavaFX — built with custom CSS animations, CRUD operations, and fluid transitions that push beyond standard enterprise UI patterns.",
-        links: { live: null, github: "https://github.com/SHAMONTEK/Employee-Management-System" },
-        screenshots: ["/assets/projects/ems/screen1.png"],
-        impact: { "UI": "60fps", "Language": "Java", "Architecture": "MVC" },
-        readmeUrl: "https://github.com/SHAMONTEK/Employee-Management-System#readme",
-        howToRun: "Clone repo → Open in IntelliJ/Eclipse → Run Main.java",
-        license: "MIT"
-    },
-    {
-        id: "tracks",
-        title: "Tracks",
-        tagline: "RSVP speed-reading app — React Native, Firebase, AI comprehension checks.",
-        category: "UI/UX",
-        image: "/assets/projects/tracks/hero.jpg",
-        fact: "+150% avg reading speed increase. AI comprehension checks. Built for retention, not just velocity.",
-        tech: ["React Native", "Firebase", "AI", "NLP"],
-        role: "Product Designer & Frontend Developer",
-        date: "2023",
-        problem: "Information overload and low retention plague modern readers. RSVP tools exist but lack comprehension layers.",
-        description: "Tracks uses stationary RSVP with adaptive speed controls, Firebase-backed progress tracking, AI comprehension checks, and multi-format document support. Built to feel as fast as the reading technique itself.",
-        links: { live: null, github: "https://github.com/SHAMONTEK/tracks" },
-        screenshots: ["/assets/projects/tracks/hero.jpg"],
-        demo: null,
-        impact: { "WPM Increase": "+150%", "30-Day Retention": "75%", "Platform": "Mobile" },
-        readmeUrl: "https://github.com/SHAMONTEK/tracks#readme",
-        howToRun: "Clone repo → npm install → npm run ios (or android)\nFirebase config required — see README.",
-        license: "Proprietary"
-    },
-    {
-        id: "sharkfin",
-        title: "SharkFin",
-        tagline: "Fintech Android app — Kotlin, Jetpack Compose, Firebase, on-device AI Coach.",
-        category: "Engineering",
-        image: "/assets/projects/actors/hero.jpg",
-        fact: "The only finance app where your money talks back to you. On-device NLP + behavioral AI — no external API.",
-        tech: ["Kotlin", "Jetpack Compose", "Firebase", "AI", "Android"],
-        role: "Lead Developer & Architect",
-        date: "2025",
-        problem: "Personal finance apps track money but don't explain behavior. Users need coaching, not just charts.",
-        description: "SharkFin is a capstone Android fintech app built with Kotlin + Jetpack Compose. Features a two-layer on-device AI Coach (NLP + behavioral pattern recognition), animated mascot, streak mechanics, and hold-to-scroll transaction input. No external AI API — all local.",
-        links: { github: "https://github.com/SHAMONTEK" },
-        screenshots: [],
-        impact: { "Platform": "Android", "AI": "On-Device", "Architecture": "Local-First" },
-        readmeUrl: null,
-        howToRun: "Android Studio → Sync Gradle → Run on emulator or device. Firebase config in local.properties.",
-        license: "In Development"
-    },
-    {
-        id: "actors",
-        title: "A.C.T.O.R.S. Engine",
-        tagline: "Contextual reasoning AI pipeline — safety-first, explainable by design.",
-        category: "Engineering",
-        image: "/assets/projects/actors/hero.jpg",
-        fact: "AI that explains its reasoning, not just its answer. Designed for safety and situational intelligence.",
-        tech: ["AI", "Python", "Figma", "NLP"],
-        role: "AI Researcher & Designer",
-        date: "2024",
-        problem: "AI models produce plausible but contextually wrong answers with no explainability. High-risk when deployed on real users.",
-        description: "A.C.T.O.R.S. is a conceptual + prototyped pipeline for context-aware AI reasoning, focused on explainability, safety guardrails, and situational intelligence. Designed to be the brain behind PhishRx's next-gen detection layer.",
-        links: { github: "https://github.com/SHAMONTEK/actors" },
-        screenshots: ["/assets/projects/actors/pipeline.png"],
-        impact: { "Focus": "AI Safety", "Explainability": "First-Class", "Status": "Active R&D" },
-        readmeUrl: "https://github.com/SHAMONTEK/actors#readme",
-        howToRun: "See README for conceptual architecture and prototype notebooks.",
-        license: "Conceptual"
-    }
-];
-
-document.addEventListener('DOMContentLoaded', () => {
-    lucide.createIcons();
-    document.getElementById('current-year').textContent = new Date().getFullYear();
-
-    // Theme
-    const themeToggle = document.getElementById('theme-toggle');
-    const themeIconLight = document.getElementById('theme-icon-light');
-    const themeIconDark = document.getElementById('theme-icon-dark');
-    const htmlEl = document.documentElement;
-    const setDark = () => { htmlEl.classList.add('dark'); htmlEl.classList.remove('light'); themeIconLight.classList.add('hidden'); themeIconDark.classList.remove('hidden'); localStorage.setItem('theme', 'dark'); };
-    const setLight = () => { htmlEl.classList.add('light'); htmlEl.classList.remove('dark'); themeIconDark.classList.add('hidden'); themeIconLight.classList.remove('hidden'); localStorage.setItem('theme', 'light'); };
-    themeToggle.addEventListener('click', () => htmlEl.classList.contains('dark') ? setLight() : setDark());
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'light') setLight(); else setDark();
-
-    // Mobile menu
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-    mobileMenuButton.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
-
-    // Navigation
-    const navLinks = document.querySelectorAll('.nav-link');
-    const pageSections = document.querySelectorAll('.page-section');
-
-    const showPage = (pageId) => {
-        pageSections.forEach(section => section.classList.toggle('hidden', section.id !== pageId));
-        navLinks.forEach(link => link.classList.toggle('active', link.dataset.navlink === pageId));
-        mobileMenu.classList.add('hidden');
-        const targetSection = document.getElementById(pageId);
-        if (pageId === 'home') { window.scrollTo({ top: 0, behavior: 'smooth' }); }
-        else if (targetSection) { targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
-        if (targetSection) { setTimeout(() => targetSection.classList.add('is-visible'), 50); }
-    };
-
-    navLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-            const pageId = link.dataset.navlink;
-            if (pageId) { window.location.hash = pageId; showPage(pageId); }
-        });
-    });
-
-    // Also handle CTA buttons with data-navlink
-    document.querySelectorAll('a[data-navlink]').forEach(link => {
-        if (!link.classList.contains('nav-link')) {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                const pageId = link.dataset.navlink;
-                if (pageId) { window.location.hash = pageId; showPage(pageId); }
-            });
-        }
-    });
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('is-visible'); });
-    }, { threshold: 0.1 });
-    pageSections.forEach(section => observer.observe(section));
-
-    // Project grid
-    const projectGrid = document.getElementById('project-grid');
-    const projectFilters = document.querySelectorAll('.project-filter');
-
-    const getCategoryBadge = (cat) => {
-        const map = { 'Engineering': 'badge-engineering', 'UI/UX': 'badge-ui-ux', 'Creative': 'badge-creative' };
-        return map[cat] || 'badge-engineering';
-    };
-
-    const renderProjects = (filter = 'all') => {
-        if (!projectGrid) return;
-        projectGrid.innerHTML = '';
-        const filtered = projectsData.filter(p => filter === 'all' || p.category.toLowerCase() === filter.toLowerCase());
-        if (!filtered.length) { projectGrid.innerHTML = '<p class="col-span-full text-center" style="color:var(--text-dim)">No projects in this category.</p>'; return; }
-
-        filtered.forEach(project => {
-            const techHtml = (project.tech || []).map(t => `<span class="tech-pill">${t}</span>`).join('');
-            const badgeClass = getCategoryBadge(project.category);
-            projectGrid.innerHTML += `
-                <div class="project-card" data-project-id="${project.id}">
-                    <div style="position:relative; height:200px; background:var(--surface-2); overflow:hidden;">
-                        <img src="${project.image}" alt="${project.title}" style="width:100%;height:100%;object-fit:cover;"
-                            onerror="const fb=document.createElement('div');fb.style.cssText='width:100%;height:100%;display:flex;align-items:center;justify-content:center;padding:1.5rem;text-align:center;font-style:italic;font-size:0.85rem;';fb.style.color='var(--text-dim)';fb.textContent='${(project.fact||'').replace(/'/g,"\\'")}';this.parentNode.replaceChild(fb,this);">
-                        <div style="position:absolute;top:12px;left:12px;">
-                            <span class="category-badge ${badgeClass}">${project.category}</span>
-                        </div>
-                    </div>
-                    <div style="padding:1.5rem;">
-                        <h3 style="font-family:'Syne',sans-serif;font-size:1.1rem;font-weight:700;margin-bottom:0.5rem;">${project.title}</h3>
-                        <p style="color:var(--text-dim);font-size:0.85rem;margin-bottom:1rem;line-height:1.5;">${project.tagline}</p>
-                        <div style="display:flex;flex-wrap:wrap;gap:6px;">${techHtml}</div>
-                    </div>
-                </div>
-            `;
-        });
-
-        document.querySelectorAll('.project-card').forEach(card => {
-            card.addEventListener('click', () => openModal(card.dataset.projectId));
-        });
-    };
-
-    projectFilters.forEach(button => {
-        button.addEventListener('click', () => {
-            projectFilters.forEach(btn => btn.classList.remove('active-filter'));
-            button.classList.add('active-filter');
-            renderProjects(button.dataset.filter);
-        });
-    });
-
-    // Modal
-    const modal = document.getElementById('project-modal');
-    const modalBackdrop = document.getElementById('modal-backdrop');
-    const modalClose = document.getElementById('modal-close');
-    const modalDynamicContent = document.getElementById('modal-dynamic-content');
-
-    const openModal = (projectId) => {
-        const project = projectsData.find(p => p.id === projectId);
-        if (!project) return;
-        const techHtml = (project.tech || []).map(t => `<span class="tech-pill">${t}</span>`).join('');
-        const impactHtml = project.impact ? Object.entries(project.impact).map(([k,v]) => `
-            <div style="background:var(--surface-2);border:1px solid var(--border);border-radius:10px;padding:1rem;text-align:center;">
-                <div style="font-family:'Syne',sans-serif;font-size:1.6rem;font-weight:800;color:var(--accent);">${v}</div>
-                <div style="font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-dim);margin-top:4px;">${k}</div>
-            </div>
-        `).join('') : '';
-        const linksHtml = `<div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:2rem;">
-            ${project.links && project.links.github ? `<a href="${project.links.github}" target="_blank" class="btn-outline">View on GitHub</a>` : ''}
-            ${project.demo ? `<a href="${project.demo}" target="_blank" class="btn-outline">Watch Demo</a>` : ''}
-            ${project.readmeUrl ? `<a href="${project.readmeUrl}" target="_blank" class="btn-outline">Read README</a>` : ''}
-        </div>`;
-
-        modalDynamicContent.innerHTML = `
-            <h2 style="font-family:'Syne',sans-serif;font-size:2rem;font-weight:800;color:var(--accent);margin-bottom:0.5rem;">${project.title}</h2>
-            <p style="color:var(--text-dim);font-size:0.85rem;margin-bottom:1.5rem;">${project.role || ''} · ${project.date || ''}</p>
-            <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:2rem;">${techHtml}</div>
-            ${impactHtml ? `<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;margin-bottom:2rem;">${impactHtml}</div>` : ''}
-            <h4 style="font-family:'Syne',sans-serif;font-size:1.1rem;font-weight:700;margin-bottom:0.75rem;">The Problem</h4>
-            <p style="color:var(--text-dim);line-height:1.75;margin-bottom:1.5rem;">${project.problem || ''}</p>
-            <h4 style="font-family:'Syne',sans-serif;font-size:1.1rem;font-weight:700;margin-bottom:0.75rem;">The Solution</h4>
-            <p style="color:var(--text-dim);line-height:1.75;margin-bottom:1.5rem;">${project.description || ''}</p>
-            ${project.howToRun ? `<h4 style="font-family:'Syne',sans-serif;font-size:1.1rem;font-weight:700;margin-bottom:0.75rem;">How to Run</h4><pre style="background:var(--base);border:1px solid var(--border);border-radius:8px;padding:1rem;font-size:0.8rem;overflow-x:auto;color:var(--accent);white-space:pre-wrap;">${project.howToRun}</pre>` : ''}
-            ${linksHtml}
-        `;
-        modal.classList.remove('hidden');
-        document.body.style.overflow = 'hidden';
-        document.getElementById('modal-content-container').scrollTop = 0;
-    };
-
-    const closeModal = () => { modal.classList.add('hidden'); document.body.style.overflow = 'auto'; };
-    modalClose.addEventListener('click', closeModal);
-    modalBackdrop.addEventListener('click', closeModal);
-    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
-
-    // Handle hash on load
-    const hash = window.location.hash.replace('#', '');
-    const validPages = ['home', 'about', 'projects', 'resume', 'contact'];
-    if (hash && validPages.includes(hash)) { showPage(hash); }
-    else { showPage('home'); }
-
-    renderProjects();
-});
-</script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const P=[
+{id:"phishrx",n:"PhishRx / PHISH-ER",c:"Engineering",s:["JavaScript","Python","Flask","Chrome API","AI/ML","OCR"],pl:"A Chrome add-on that spots scam messages and warns you before you click. Built to protect people who aren’t tech-savvy.",t:"MV3 Chrome extension → Flask API → ML classifier, plus OCR for image-based phishing. Designed around low-latency inference.",m:{"Detection":"98%","Latency":"120ms"},gh:"https://github.com/SHAMONTEK/PHISH-ER"},
+{id:"ems",n:"Employee Management System",c:"Engineering",s:["Java","JavaFX","CSS"],pl:"A desktop app for managing staff records that feels smooth instead of dated.",t:"JavaFX MVC with CRUD, custom CSS theming and animated scene transitions.",m:{"UI":"60fps","Pattern":"MVC"},gh:"https://github.com/SHAMONTEK/Employee-Management-System"},
+{id:"tracks",n:"Tracks",c:"UI/UX",s:["React Native","Firebase","AI/ML"],pl:"A reading app that flashes words one at a time so you read faster, then quizzes you so it sticks.",t:"RSVP rendering engine with adaptive WPM, Firebase progress sync and AI comprehension checks.",m:{"Speed gain":"+150%","Retention":"75%"},gh:"https://github.com/SHAMONTEK/tracks"},
+{id:'sharkfin',f:1,n:'SharkFin',c:'★ Flagship · Fintech UI',s:["Kotlin","Jetpack Compose","Firebase","AI/ML"],pl:"A money app with a coach that notices your spending habits and talks you through them.",t:"Android, local-first. Two-layer on-device coach (NLP + behavioral patterns), no external AI API.",m:{"Platform":"Android","AI":"On-device"},gh:"https://github.com/SHAMONTEK"},
+{id:"actors",n:"A.C.T.O.R.S. Engine",c:"Engineering",s:["Python","AI/ML","NLP"],pl:"An AI design that explains why it gave an answer, so it’s safer to trust.",t:"Context-aware reasoning pipeline with explainability and guardrail layers. Prototype stage.",m:{"Focus":"AI safety","Status":"R&D"},gh:"https://github.com/SHAMONTEK/actors"}];
+P.sort((a,b)=>(b.f||0)-(a.f||0));const g=$('#grid'),ch=$('#chips');let sk=null;
+function draw(){g.innerHTML=P.map(p=>`<div class="card${p.f?' fl':''}${sk&&!p.s.includes(sk)?' dim2':''}" data-id="${p.id}"><span class="tag${p.f?' gold':''}">${p.c}</span><h3>${p.n}</h3><p class="pl">${p.pl}</p><p class="t dim">${p.t}</p><div class="hint">Tap to open ↓</div><div class="more"><div class="m">${Object.entries(p.m).map(([k,v])=>`<div><b>${v}</b><span>${k}</span></div>`).join("")}</div><div class="chips">${p.s.map(x=>`<span class="chip">${x}</span>`).join("")}</div><a class="btn o" target="_blank" rel="noopener" href="${p.gh}">View code</a> <button class="btn o" data-x="1">Close</button></div></div>`).join("")}
+function chips(){const a=[...new Set(P.flatMap(p=>p.s))].sort();ch.innerHTML=a.map(x=>`<button class="chip${x===sk?" on":""}">${x}</button>`).join("")}
+ch.onclick=e=>{if(e.target.classList.contains("chip")){sk=sk===e.target.textContent?null:e.target.textContent;chips();draw()}};
+g.onclick=e=>{const c=e.target.closest(".card");if(!c)return;if(e.target.dataset.x){c.classList.remove("open");return}if(!c.classList.contains("open")){$$(".card.open").forEach(x=>x.classList.remove("open"));c.classList.add("open");c.scrollIntoView({behavior:"smooth",block:"center"})}};
+function mode(m){document.body.dataset.mode=m;$$("#seg button").forEach(b=>b.classList.toggle("on",b.dataset.m===m));toast(m==="tech"?"Engineer view on":"Plain English on")}
+$("#seg").onclick=e=>e.target.dataset.m&&mode(e.target.dataset.m);
+$$('.path').forEach(b=>b.onclick=()=>{const go=b.dataset.go,m=b.dataset.mode;mode(m);$('#'+go).scrollIntoView({behavior:'smooth'});try{history.replaceState(null,'','#'+go)}catch(e){}setTimeout(()=>{if(go==='projects'){toast(m==='tech'?'Engineer view is on. Press Ctrl K to jump anywhere.':'Plain English is on. SharkFin is open: start there.');const c=$('[data-id=sharkfin]');if(c&&!c.classList.contains('open'))c.click()}else{toast('Resume, email and LinkedIn are right here.');const c=$('#contact .demo');if(c){c.classList.add('hl');setTimeout(()=>c.classList.remove('hl'),2200)}}},650)});
+let tt;function toast(t){const e=$("#toast");e.textContent=t;e.classList.add("show");clearTimeout(tt);tt=setTimeout(()=>e.classList.remove("show"),2200)}
+function theme(){const d=document.documentElement,cur=d.dataset.theme||'dark',n=cur==="dark"?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("tk-theme",n)}catch(e){}}
+try{const s=localStorage.getItem("tk-theme");if(s)document.documentElement.dataset.theme=s}catch(e){}
+$("#th").onclick=theme;
+$("#yr").textContent=new Date().getFullYear();
+// typing
+const R=['interfaces people trust.','fintech that feels human.','scam-fighting AI tools.','products from sketch to ship.'];let ri=0,ci=0,del=0;const ty=$("#ty");
+(function tick(){const w=R[ri];ty.textContent=w.slice(0,ci);if(!del&&ci===w.length){del=1;return setTimeout(tick,1600)}if(del&&ci===0){del=0;ri=(ri+1)%R.length}ci+=del?-1:1;setTimeout(tick,del?30:70)})();
+// counters
+const co=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;co.unobserve(e.target);const n=+e.target.dataset.n;let i=0;const st=Math.max(1,Math.ceil(n/40));const iv=setInterval(()=>{i=Math.min(n,i+st);e.target.textContent=i;if(i>=n)clearInterval(iv)},25)}));$$("[data-n]").forEach(x=>co.observe(x));
+const rv=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add("in")),{threshold:.08});$$(".rv").forEach(x=>rv.observe(x));
+// scrollspy
+const sp=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)$$("nav a.l").forEach(a=>a.classList.toggle("on",a.hash==="#"+e.target.id))}),{rootMargin:"-45% 0px -50%"});$$("section").forEach(s=>sp.observe(s));
+// demo
+const EX=["URGENT: Your Bank of America account is locked. Verify your password now at http://bit.ly/secure-bofa-login or it will be closed within 24 hours.","Hey! I’m stuck overseas. Please buy 4 Apple gift cards for $100 each and send me the codes. Don’t tell anyone, I’ll repay you.","Hi Tae, are we still on for lunch Thursday at noon? Let me know if you need to move it."];
+const RU=[[/urgent|immediately|within \d+ hours|act now|final notice|suspended|locked/i,25,"Pressure tactics: scammers rush you so you won’t think."],[/verify|confirm your (account|identity)|password|ssn|social security|login/i,25,"Asks for credentials or sensitive info. Real banks don’t text this."],[/gift ?cards?|wire|crypto|bitcoin|western union|zelle me/i,30,"Requests untraceable payment."],[/bit\.ly|tinyurl|t\.co|https?:\/\/\d{1,3}(\.\d{1,3}){3}|\.(xyz|top|click|ru)\b/i,25,"Suspicious or disguised link."],[/don’t tell|don't tell|keep this secret|stuck overseas/i,20,"Secrecy plus a sob story is a classic manipulation pattern."]];
+function scan(){const t=$("#msg").value.trim(),f=$("#fill"),v=$("#verdict"),fl=$("#flags");if(!t){f.style.width=0;v.textContent="Waiting for a message…";fl.innerHTML="";return}let s=0,h=[];RU.forEach(([r,w,m])=>{if(r.test(t)){s+=w;h.push(m)}});s=Math.min(100,s);f.style.width=Math.max(s,6)+"%";f.style.background=s>=60?'var(--red)':s>=30?'var(--gold)':'var(--ac)';v.textContent=s>=60?"🚨 Very likely a scam ("+s+"/100)":s>=30?"⚠️ Suspicious ("+s+"/100)":"✅ Looks okay ("+s+"/100)";fl.innerHTML=h.map(x=>`<div class="flag">${x}</div>`).join('');v.textContent=v.textContent.replace(/^\S+\s/,'')}
+$("#msg").oninput=scan;$$("[data-ex]").forEach(b=>b.onclick=()=>{$("#msg").value=EX[b.dataset.ex];scan()});
+// contact
+$("#send").onclick=()=>{const n=$("#cn").value,e=$("#ce").value,m=$("#cm").value;if(!m.trim()){toast("Add a message first");return}location.href="mailto:knight.shamonte@gmail.com?subject="+encodeURIComponent("Portfolio message from "+(n||"a visitor"))+"&body="+encodeURIComponent(m+"\n\n— "+n+" "+e)}
+// palette
+const C=[["Go to Home","#home"],["Go to About","#about"],["Go to Projects","#projects"],["Try the live demo","#demo"],["Contact me","#contact"],["Switch to Plain English",()=>mode("plain")],["Switch to Engineer view",()=>mode("tech")],["Toggle light/dark",theme],["Open GitHub",()=>open("https://github.com/SHAMONTEK")],["Open LinkedIn",()=>open("https://www.linkedin.com/in/shamonte")],["Email Tae",()=>location.href="mailto:knight.shamonte@gmail.com"],["run: whoami",()=>toast("tae@atlanta ~ full-stack engineer, trumpet player, builder")],["run: sudo hire tae",()=>toast("Permission granted. Email sent… almost 😉")]].concat(P.map(p=>["Project: "+p.n,()=>{location.hash="projects";setTimeout(()=>$(`[data-id=${p.id}]`).click(),400)}]));
+let sel=0,fil=C;const pal=$("#pal"),pi=$("#pi"),pl=$("#pl");
+function rp(){pl.innerHTML=fil.map((c,i)=>`<div class="${i===sel?"sel":""}" data-i="${i}">${c[0]}<span class="dim">↵</span></div>`).join("")}
+function op(){pal.classList.add("show");pi.value="";fil=C;sel=0;rp();pi.focus()}
+function cl(){pal.classList.remove("show")}
+function run(i){const c=fil[i];if(!c)return;cl();typeof c[1]==="string"?location.hash=c[1]:c[1]()}
+$("#pk").onclick=op;pal.onclick=e=>{if(e.target===pal)cl();const d=e.target.closest("[data-i]");if(d)run(+d.dataset.i)};
+pi.oninput=()=>{const q=pi.value.toLowerCase();fil=C.filter(c=>c[0].toLowerCase().includes(q));sel=0;rp()};
+pi.onkeydown=e=>{if(e.key==="ArrowDown"){sel=Math.min(fil.length-1,sel+1);rp();e.preventDefault()}else if(e.key==="ArrowUp"){sel=Math.max(0,sel-1);rp();e.preventDefault()}else if(e.key==="Enter")run(sel)};
+addEventListener("keydown",e=>{if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==="k"){e.preventDefault();op()}else if(e.key==="Escape")cl();else if(e.key==="/"&&!/INPUT|TEXTAREA/.test(document.activeElement.tagName)){e.preventDefault();op()}});
+chips();draw();$$('.path b').forEach(b=>b.textContent=b.textContent.replace(/^\S+\s/,''));const ST=[['Dream','I start with the person and the problem, then what it should feel like when it is right.','Problem framing, user flows and constraints before a single pixel.'],['Draw','Pen and paper first. Screens, flows and the small details that make an interface feel expensive.','Hand-drawn wireframes, then a component inventory, then design tokens.'],['Direct','I brief AI like a lead briefs a team: clear specs, taste, constraints. It builds. I review and decide.','Spec-driven prompting, architecture calls, and review of every diff.'],['Deliver','Test it on real people, fix what breaks, then ship it.','Usability feedback loops, instrumentation, iterate and release.']];function step(i){$$('#steps button').forEach(b=>b.classList.toggle('on',+b.dataset.s===i));$('#pp').innerHTML='<h3>'+ST[i][0]+'</h3><p class=pl>'+ST[i][1]+'</p><p class=t>'+ST[i][2]+'</p>'}$('#steps').onclick=e=>e.target.dataset.s&&step(+e.target.dataset.s);step(0);$('#sw').onclick=e=>{const b=e.target.closest('[data-t]');if(b)toast(b.dataset.t)};
+const nd=$('#nudge');new IntersectionObserver(es=>es.forEach(e=>nd.classList.toggle('gone',e.isIntersecting||e.boundingClientRect.top<0)),{threshold:.15}).observe($('.paths'));(function(){const c=$('#stars'),x=c.getContext('2d'),S=[],rm=matchMedia('(prefers-reduced-motion:reduce)').matches;let W,H,D,sy=0,lw=innerWidth;function size(){D=Math.min(devicePixelRatio||1,2);W=c.width=innerWidth*D;H=c.height=innerHeight*D}function mk(){S.length=0;for(let i=0;i<110;i++){const z=Math.random();S.push({x:Math.random()*W,y:Math.random()*H,z,r:(.3+z*.6)*D,vx:(Math.random()-.5)*.12*D,vy:(Math.random()-.5)*.08*D,p:Math.random()*6.28})}}function frame(t){x.clearRect(0,0,W,H);for(const s of S){if(!rm){s.x=(s.x+s.vx+W)%W;s.y=(s.y+s.vy+H)%H}const py=((s.y-sy*s.z*.3*D)%H+H)%H;x.fillStyle='rgba(229,228,226,'+(.25+.55*s.z*(.6+.4*Math.sin(t/900+s.p)))+')';x.beginPath();x.arc(s.x,py,s.r,0,6.283);x.fill()}if(!rm)requestAnimationFrame(frame)}addEventListener('resize',()=>{const w=innerWidth!==lw;lw=innerWidth;size();if(w)mk();if(rm)frame(0)});addEventListener('scroll',()=>{sy=scrollY;if(rm)frame(0)},{passive:true});size();mk();requestAnimationFrame(frame)})();</script>
 </body>
 </html>
